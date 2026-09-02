@@ -128,6 +128,16 @@ function App() {
         <div className="container two-column">
           <div className="about-image">
             <div className="about-card">
+              <div className="support-card">
+
+    <div className="support-icon">
+        <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 3L20 6V11C20 16 16.5 20 12 21C7.5 20 4 16 4 11V6L12 3Z"/>
+            <path d="M9 12L11 14L15 10"/>
+        </svg>
+    </div>
+    </div>
+
               <span>24×7</span>
               <p>Security Support</p>
             </div>

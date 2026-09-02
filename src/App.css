@@ -1023,3 +1023,10 @@ footer {
   color: #0b1f3a;
   font-weight: 600;
 }
+.support-icon {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
