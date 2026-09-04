@@ -75,7 +75,7 @@ function App() {
       <Routes>
 
         <Route
-          path="/"
+          path="/home"
           element={<Home />}
         />
 
@@ -92,7 +92,7 @@ function App() {
         <Route
           path="/security-force"
           element={
-            <SecurityForce/>
+            <SecurityForce />
           }
         />
 
