@@ -10,7 +10,7 @@ import SecurityForce from "./assets/pages/SecurityForce";
 import Founder from "./assets/pages/Founder";
 import VisionMission from "./assets/pages/VisionMission";
 import WhyUs from "./assets/pages/WhyUs";
-import Contact from "./assets/pages/Contact";
+import Contact from "./assets/pages/contact";
 import Industries from "./assets/pages/Industries";
 import Footer from "./assets/pages/Footer";
 function ScrollToTop() {
