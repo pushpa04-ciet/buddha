@@ -9305,3 +9305,71 @@ html {
   }
 
 }
+/* =========================
+   ABOUT US - MOBILE VIEW
+========================= */
+
+@media (max-width: 768px) {
+
+  .inner-hero {
+    min-height: 380px !important;
+    padding: 90px 20px 50px !important;
+  }
+
+  .inner-hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  .inner-hero-content h1 {
+    font-size: 38px !important;
+    line-height: 1.15 !important;
+  }
+
+  .inner-hero-content p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* About content */
+  .about-page,
+  .about-section,
+  .about-content-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .about-page h2,
+  .about-section h2,
+  .about-content-section h2 {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+
+  .about-page p,
+  .about-section p,
+  .about-content-section p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Images */
+  .about-page img,
+  .about-section img,
+  .about-content-section img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  /* Prevent horizontal overflow */
+  .about-page *,
+  .about-section *,
+  .about-content-section * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+}
