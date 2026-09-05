@@ -99,9 +99,9 @@ function About() {
 
         </div>
 
-        <div className="about-vertical-grid">
+        <div className="about-vertical-grid row g-4">
 
-          <div className="about-vertical-card">
+          <div className="about-vertical-card col-12 col-md-6">
 
             <div className="about-card-number">
               01
