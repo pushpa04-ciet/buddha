@@ -134,31 +134,26 @@ function About() {
               02
             </div>
 
-            <div className="about-card-icon">
-              ✦
-            </div>
+           <div className="about-card-icon">
+  🛡️
+</div>
 
-            <p>HOUSEKEEPING VERTICAL</p>
+<p>ELECTRONIC SECURITY SERVICES</p>
 
-            <h3>
-              Buddha
-              <br />
-              <span>Housekeeping Services</span>
-            </h3>
+<h3>
+  Buddha
+  <br />
+  <span>Electronic Security Solutions</span>
+</h3>
 
-            <p className="card-description">
-              Professional housekeeping and facility support
-              services focused on cleanliness, hygiene and
-              well-managed workplaces.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
+<p className="card-description">
+  Technology-enabled security solutions designed to
+  strengthen surveillance, access control and workplace
+  safety.
+</p>
+</div>
+</div>
+</section>
       {/* INDUSTRY EXPERIENCE */}
 
       <section className="about-expertise">

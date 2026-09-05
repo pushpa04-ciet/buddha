@@ -223,143 +223,55 @@ function WhyUs() {
           </div>
 
 
-          {/* HOUSEKEEPING */}
+          {/* ELECTRONIC SECURITY */}
 
-          <div className="vertical-card housekeeping-vertical">
+<div className="vertical-card electronic-vertical">
 
-            <div className="vertical-number">
-              02
-            </div>
+  <div className="vertical-number">
+    02
+  </div>
 
-            <div className="vertical-icon">
-              ✦
-            </div>
+  <div className="vertical-icon">
+    ◉
+  </div>
 
-            <p className="vertical-tag">
-              HOUSEKEEPING VERTICAL
-            </p>
+  <p className="vertical-tag">
+    ELECTRONIC SECURITY VERTICAL
+  </p>
 
-            <h2>
-              Buddha
-              <br />
-              <span>Housekeeping Services</span>
-            </h2>
+  <h2>
+    Buddha
+    <br />
+    <span>Electronic Security Services</span>
+  </h2>
 
-            <p>
-              Professional housekeeping and facility support services
-              designed to maintain clean, hygienic and well-managed
-              workplaces.
-            </p>
+  <p>
+    Technology-enabled security solutions designed to strengthen
+    surveillance, access control and workplace safety.
+  </p>
 
-            <ul>
+  <ul>
 
-              <li>✓ Office & Commercial Cleaning</li>
+    <li>✓ CCTV & Surveillance Support</li>
 
-              <li>✓ Industrial & Factory Cleaning</li>
+    <li>✓ Access Control Systems</li>
 
-              <li>✓ Pantry & Workplace Support</li>
+    <li>✓ Fire Alarm Systems</li>
 
-              <li>✓ Washroom & Hygiene Management</li>
+    <li>✓ Burglar Alarm Systems</li>
 
-              <li>✓ Daily, Periodic & Deep Cleaning</li>
+    <li>✓ Attendance & Employee Tracking</li>
 
-            </ul>
+    <li>✓ Doors & Gates Automation</li>
 
-            <Link to="/housekeeping">
-              Explore Housekeeping →
-            </Link>
+  </ul>
 
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= OFFICE SECURITY SERVICES ================= */}
-
-      <section className="office-security">
-
-        <div className="section-heading">
-
-          <p>OUR SERVICES</p>
-
-          <h2>
-            Office Security Services
-            <br />
-            <span>We Provide.</span>
-          </h2>
-
-        </div>
-
-
-        <div className="office-service-grid">
-
-
-          <div className="office-service-card">
-            <div className="service-symbol">◉</div>
-            <h3>
-              24×7 Security
-              <br />
-              & Surveillance
-            </h3>
-          </div>
-
-
-          <div className="office-service-card">
-            <div className="service-symbol">♟</div>
-            <h3>
-              Trained Security
-              <br />
-              Guards & Supervisors
-            </h3>
-          </div>
-
-
-          <div className="office-service-card">
-            <div className="service-symbol">▣</div>
-            <h3>
-              Visitor &
-              <br />
-              Access Control
-            </h3>
-          </div>
-
-
-          <div className="office-service-card">
-            <div className="service-symbol">🚗</div>
-            <h3>
-              Employee &
-              <br />
-              Vehicle Entry
-              <br />
-              Management
-            </h3>
-          </div>
-
-
-          <div className="office-service-card">
-            <div className="service-symbol">◒</div>
-            <h3>
-              Premises
-              <br />
-              Patrolling
-            </h3>
-          </div>
-
-
-          <div className="office-service-card">
-            <div className="service-symbol">♨</div>
-            <h3>
-              Emergency Response &
-              <br />
-              Incident Reporting
-            </h3>
-          </div>
-
-        </div>
-
-      </section>
+  <Link to="/security-force">
+    Explore Electronic Security →
+  </Link>
+</div>
+</div>
+</section>
 
 
       {/* ================= INDUSTRIES ================= */}

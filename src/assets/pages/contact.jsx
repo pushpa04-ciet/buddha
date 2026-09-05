@@ -70,21 +70,13 @@ function Contact() {
 
           </div>
 
-
-          <div className="contact-box">
-
-            <div className="contact-icon">
-              ✦
-            </div>
-
-            <div>
-              <span>HOUSEKEEPING VERTICAL</span>
-              <strong>
-                Buddha Housekeeping Services
-              </strong>
-            </div>
-
-          </div>
+<div className="contact-box">
+  <div className="contact-icon">◉</div>
+  <div>
+    <span>ELECTRONIC SECURITY SERVICES</span>
+    <strong>Buddha Electronic Security Services</strong>
+  </div>
+</div>
 
         </div>
 
