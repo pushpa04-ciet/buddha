@@ -9439,3 +9439,46 @@ html {
     overflow-wrap: break-word !important;
   }
 }
+@media (max-width: 768px) {
+
+  .business-verticals {
+    padding: 50px 20px !important;
+  }
+
+  .business-verticals .section-title {
+    margin-bottom: 30px !important;
+  }
+
+  .business-verticals .section-title h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  .verticals-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .vertical-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 25px 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .vertical-card h2 {
+    font-size: 27px !important;
+    line-height: 1.15 !important;
+  }
+
+  .vertical-card p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .vertical-card ul {
+    margin-top: 15px !important;
+  }
+
+}
