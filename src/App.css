@@ -9373,3 +9373,69 @@ html {
   }
 
 }
+/* =========================
+   ABOUT PAGE TEXT FIX
+   ========================= */
+
+.about-hero-content,
+.about-intro-content,
+.about-vertical-card,
+.about-expertise-content,
+.about-approach,
+.about-cta {
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  white-space: normal !important;
+}
+
+/* About paragraphs */
+.about-intro-content p,
+.about-vertical-card p,
+.about-expertise-content p,
+.about-approach p {
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.7 !important;
+}
+
+/* About cards */
+.about-vertical-card {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+/* About headings */
+.about-hero-content h1,
+.about-intro-content h2,
+.about-vertical-card h3,
+.about-expertise-content h2,
+.about-approach h2,
+.about-approach h3,
+.about-cta h2 {
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-hero-content,
+  .about-intro-content,
+  .about-vertical-card,
+  .about-expertise-content,
+  .about-approach,
+  .about-cta {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about-intro-content p,
+  .about-vertical-card p,
+  .about-expertise-content p,
+  .about-approach p {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+}
