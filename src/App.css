@@ -12523,3 +12523,161 @@ a.scroll-show {
   }
 
 }
+/* =========================================================
+   FOUNDER EXPERIENCE SECTION FIX
+========================================================= */
+
+.founder-experience {
+  width: 100%;
+  background: #061a33;
+  padding: 100px 30px;
+  box-sizing: border-box;
+}
+
+.founder-experience .section-title {
+  max-width: 800px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.founder-experience .section-tag {
+  color: #c9a227;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.founder-experience .section-title h2 {
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+.founder-experience .section-title h2 span {
+  color: #c9a227;
+}
+
+.founder-experience .section-title > p:last-child {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* CARDS CONTAINER */
+
+.experience-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+/* INDIVIDUAL CARD */
+
+.founder-experience-card {
+  width: 100%;
+  min-height: 230px;
+
+  padding: 30px 28px;
+
+  box-sizing: border-box;
+
+  background: #102f50;
+
+  border: 1px solid rgba(255,255,255,0.14);
+
+  border-top: 3px solid #c9a227;
+
+  border-radius: 6px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* CARD HOVER */
+
+.founder-experience-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.25);
+}
+
+
+/* NUMBER */
+
+.founder-experience-card strong {
+  display: block;
+
+  color: #c9a227;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  margin-bottom: 18px;
+}
+
+
+/* TITLE */
+
+.founder-experience-card h3 {
+  color: #ffffff;
+
+  font-size: 20px;
+
+  margin: 0 0 12px;
+}
+
+
+/* DESCRIPTION */
+
+.founder-experience-card p {
+  color: #cbd5e1;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .founder-experience {
+    padding: 70px 20px;
+  }
+
+  .founder-experience .section-title h2 {
+    font-size: 34px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .founder-experience-card {
+    min-height: auto;
+    padding: 28px 22px;
+  }
+
+}

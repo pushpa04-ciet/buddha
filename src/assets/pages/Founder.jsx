@@ -171,7 +171,7 @@ function Founder() {
 
         <div className="experience-grid">
 
-          <div className="experience-box">
+          <div className="founder-experience-card">
             <strong>01</strong>
 
             <h3>
@@ -185,7 +185,7 @@ function Founder() {
           </div>
 
 
-          <div className="experience-box">
+          <div className="founder-experience-card">
             <strong>02</strong>
 
             <h3>
@@ -199,7 +199,7 @@ function Founder() {
           </div>
 
 
-          <div className="experience-box">
+          <div className="founder-experience-card">
             <strong>03</strong>
 
             <h3>
@@ -213,7 +213,7 @@ function Founder() {
           </div>
 
 
-          <div className="experience-box">
+          <div className="founder-experience-card">
             <strong>04</strong>
 
             <h3>
@@ -227,7 +227,7 @@ function Founder() {
           </div>
 
 
-          <div className="experience-box">
+          <div className="founder-experience-card">
             <strong>05</strong>
 
             <h3>
