@@ -9560,10 +9560,76 @@ html {
     letter-spacing: 1px !important;
   }
 }
-.logo,
-.logo img,
-.logo-name {
+/* =========================
+   BUDDHA LOGO
+========================= */
+
+.logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  flex-shrink: 0 !important;
+}
+
+.logo img {
+  width: 58px !important;
+  height: 58px !important;
+  object-fit: contain !important;
+  display: block !important;
   opacity: 1 !important;
   transform: none !important;
   filter: none !important;
+}
+
+.logo-text {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  line-height: 1.1 !important;
+}
+
+.logo-text strong {
+  color: white !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.logo-text span {
+  color: #d6e3ef !important;
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.3px !important;
+  margin-top: 4px !important;
+}
+
+/* Prevent scroll animation from hiding logo */
+
+.logo,
+.logo img,
+.logo-text {
+  animation: none !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .logo {
+    gap: 7px !important;
+  }
+
+  .logo img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .logo-text strong {
+    font-size: 13px !important;
+  }
+
+  .logo-text span {
+    font-size: 6px !important;
+    letter-spacing: 0.8px !important;
+  }
 }

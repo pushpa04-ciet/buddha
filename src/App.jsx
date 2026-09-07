@@ -53,7 +53,6 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   useEffect(() => {
-    
   const elements = document.querySelectorAll(".scroll-animate");
 
   const observer = new IntersectionObserver(
@@ -68,7 +67,6 @@ function App() {
       threshold: 0.15,
     }
   );
-  
 
   elements.forEach((element) => observer.observe(element));
 
@@ -79,17 +77,16 @@ function App() {
     <ScrollToTop />
 
       <nav className="navbar">
-
-  <Link to="/" className="logo">
+        <Link to="/" className="logo">
   <img
     src="/images/buddha-logo.jpg"
-    alt="Buddha Facilities Logo"
+    alt="Buddha Security Facilities"
   />
 
-  <span className="logo-name">
-    BUDDHA
-    <small>SECURITY FACILITIES</small>
-  </span>
+  <div className="logo-text">
+    <strong>BUDDHA</strong>
+    <span>SECURITY FACILITIES</span>
+  </div>
 </Link>
 
   <button
