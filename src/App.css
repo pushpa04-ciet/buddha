@@ -9649,26 +9649,37 @@ html {
     gap: 0 !important;
   }
 }
-/* ===== FINAL MOBILE FIX ===== */
+/* ===== VISION & MISSION MOBILE FIX ===== */
 
 @media (max-width: 768px) {
 
-  /* Prevent side overflow */
-  html,
-  body,
-  #root {
+  .vision-intro {
     width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+    padding: 50px 20px !important;
+    box-sizing: border-box !important;
   }
 
-  /* VISION & MISSION */
+  .vision-intro h2 {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+  }
+
+  .vision-intro > p:last-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+
+  /* 3 cards - one below another */
+
   .vm-section {
     width: 100% !important;
+    padding: 45px 20px !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 20px !important;
-    padding: 40px 20px !important;
+    gap: 18px !important;
     box-sizing: border-box !important;
   }
 
@@ -9676,71 +9687,74 @@ html {
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
+    padding: 28px 22px !important;
     box-sizing: border-box !important;
   }
 
   .vm-card h2 {
     font-size: 34px !important;
     line-height: 1.1 !important;
+    white-space: normal !important;
   }
 
-  .vm-card .vm-main-text {
+  .vm-card h2 span {
+    white-space: normal !important;
+  }
+
+  .vm-main-text {
     width: 100% !important;
     max-width: 100% !important;
     font-size: 14px !important;
-    line-height: 1.6 !important;
+    line-height: 1.7 !important;
+    white-space: normal !important;
     word-break: normal !important;
     overflow-wrap: break-word !important;
-  }
-
-
-  /* SECURITY FORCE / SERVICES */
-  .service-main-grid {
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 20px !important;
-    padding: 0 20px !important;
     box-sizing: border-box !important;
   }
 
-  .big-service {
+
+  /* CORE VALUES */
+
+  .values-section {
+    width: 100% !important;
+    padding: 50px 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .values-grid {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .value-box {
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
 
-  .big-service img,
-  .service-image img {
-    width: 100% !important;
+  .value-box p {
     max-width: 100% !important;
-    height: auto !important;
-    display: block !important;
-  }
-
-  .service-info {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-  }
-
-  .service-info h3,
-  .service-info p,
-  .service-info li {
-    max-width: 100% !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
     word-break: normal !important;
-    overflow-wrap: break-word !important;
   }
 
 
-  /* Any security/service grid */
-  .services-grid,
-  .security-grid,
-  .service-grid {
+  /* CLOSING CTA */
+
+  .founder-quote {
     width: 100% !important;
-    grid-template-columns: 1fr !important;
-    display: grid !important;
     box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .founder-quote h2 {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
   }
 }
+
