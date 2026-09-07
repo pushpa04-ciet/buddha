@@ -212,7 +212,7 @@ function App() {
   Get a Quote
 </button>
 <a
-  href="https://wa.me/918096083322"
+  href="https://wa.me/918096083322?text=Hello%20Buddha%20Security%20Facilities%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
   className="whatsapp-float"
   target="_blank"
   rel="noopener noreferrer"
