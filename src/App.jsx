@@ -54,38 +54,67 @@ function ScrollToTop() {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
+ function ScrollAnimations() {
+  const { pathname } = useLocation();
+
   useEffect(() => {
-  const elements = document.querySelectorAll(
-    "section, img, .about-vertical-card, .vertical-card,  .vertical-service-card, .service-card, .big-service, .industry-grid > div, .why-item, .value-box, .vm-card, .contact-box, .service-item, .feature-card"
-  );
+    let observer;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("scroll-show");
-        } else {
-          entry.target.classList.remove("scroll-show");
+    const timer = setTimeout(() => {
+
+      const elements = document.querySelectorAll(
+        "section, img, h1, h2, h3, p, li, a, .about-vertical-card, .vertical-card, .vertical-service-card, .service-card, .big-service, .industry-grid > div, .why-item, .value-box, .vm-card, .contact-box, .service-item, .feature-card"
+      );
+
+      observer = new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+              entry.target.classList.add("scroll-show");
+              entry.target.classList.remove("scroll-hide");
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.08,
+          rootMargin: "0px 0px -40px 0px"
         }
+      );
+
+      elements.forEach((element) => {
+
+        element.classList.add("scroll-hide");
+
+        observer.observe(element);
+
       });
-    },
-    {
-      threshold: 0.12
-    }
-  );
 
-  elements.forEach((element) => {
-    element.classList.add("scroll-hide");
-    observer.observe(element);
-  });
+    }, 80);
 
-  return () => observer.disconnect();
-}, []);
+    return () => {
+
+      clearTimeout(timer);
+
+      if (observer) {
+        observer.disconnect();
+      }
+
+    };
+
+  }, [pathname]);
+
+  return null;
+}
   
 
   return (
     <BrowserRouter>
     <ScrollToTop />
+     <ScrollAnimations />
 
       <nav className="navbar">
         <Link to="/" className="logo">

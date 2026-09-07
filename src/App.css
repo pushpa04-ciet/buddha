@@ -12316,3 +12316,210 @@ img.scroll-show,
   }
 
 }
+/* =========================================================
+   GLOBAL FAST SCROLL ANIMATIONS
+========================================================= */
+
+.scroll-hide {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity 0.45s ease-out,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   IMAGE ANIMATION
+========================================================= */
+
+img.scroll-hide {
+  opacity: 0;
+  transform: translateY(30px) scale(0.96);
+}
+
+img.scroll-show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
+
+.vertical-service-card.scroll-hide,
+.service-card.scroll-hide,
+.big-service.scroll-hide,
+.vertical-card.scroll-hide,
+.about-vertical-card.scroll-hide {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.vertical-service-card.scroll-show,
+.service-card.scroll-show,
+.big-service.scroll-show,
+.vertical-card.scroll-show,
+.about-vertical-card.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   TEXT / CONTENT
+========================================================= */
+
+h1.scroll-hide,
+h2.scroll-hide,
+h3.scroll-hide,
+p.scroll-hide,
+li.scroll-hide,
+a.scroll-hide {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+h1.scroll-show,
+h2.scroll-show,
+h3.scroll-show,
+p.scroll-show,
+li.scroll-show,
+a.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity 0.4s ease-out,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   INDUSTRIES / WHY US / VALUE CARDS
+========================================================= */
+
+.industry-grid > div.scroll-hide,
+.why-item.scroll-hide,
+.value-box.scroll-hide,
+.vm-card.scroll-hide,
+.contact-box.scroll-hide,
+.service-item.scroll-hide,
+.feature-card.scroll-hide {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.industry-grid > div.scroll-show,
+.why-item.scroll-show,
+.value-box.scroll-show,
+.vm-card.scroll-show,
+.contact-box.scroll-show,
+.service-item.scroll-show,
+.feature-card.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity 0.45s ease-out,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.vertical-service-image {
+  overflow: hidden;
+}
+
+.vertical-service-image img {
+  transition: transform 0.5s ease;
+}
+
+.vertical-service-card:hover
+.vertical-service-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .scroll-hide {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  .scroll-show {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+      opacity 0.4s ease-out,
+      transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+
+  img.scroll-hide {
+    opacity: 0;
+    transform: translateY(25px) scale(0.97);
+  }
+
+  img.scroll-show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+
+    transition:
+      opacity 0.45s ease-out,
+      transform 0.55s ease;
+  }
+
+
+  h1.scroll-hide,
+  h2.scroll-hide,
+  h3.scroll-hide,
+  p.scroll-hide,
+  li.scroll-hide,
+  a.scroll-hide {
+    transform: translateY(20px);
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .scroll-hide,
+  .scroll-show,
+  img.scroll-hide,
+  img.scroll-show {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+}
