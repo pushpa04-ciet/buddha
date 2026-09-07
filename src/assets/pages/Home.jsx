@@ -355,9 +355,9 @@ function Home() {
         <li>Fire & Safety Support</li>
       </ul>
 
-      <a href="/security-force">
-        Explore Security Services →
-      </a>
+      <Link to="/security-force">
+  Explore Security Services →
+</Link>
 
     </div>
   </div>
