@@ -9757,4 +9757,416 @@ html {
     line-height: 1.25 !important;
   }
 }
+/* =====================================
+   ABOUT PAGE - MOBILE ONLY FIX
+   ===================================== */
 
+@media (max-width: 768px) {
+
+  /* ABOUT INTRO */
+  .about-intro {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 50px 20px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
+  .about-intro-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-intro-content h2 {
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-intro-content p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    overflow-wrap: break-word !important;
+  }
+
+
+  /* STAT BOX */
+  .about-stat-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-stat-box > div {
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 15px 6px !important;
+    text-align: center !important;
+  }
+
+  .about-stat-box strong {
+    font-size: 22px !important;
+  }
+
+  .about-stat-box span {
+    font-size: 10px !important;
+    line-height: 1.3 !important;
+  }
+
+
+  /* BUSINESS VERTICALS
+     Keep the two existing cards,
+     only make them fit mobile */
+  .about-verticals {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .about-vertical-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-vertical-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-vertical-card h3 {
+    font-size: 28px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-vertical-card p {
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+
+  /* EXPERTISE */
+  .about-expertise {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+    padding: 55px 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-expertise-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-expertise-content h2 {
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-expertise-content p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  .expertise-list {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  .expertise-list > div {
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 14px 10px !important;
+    font-size: 13px !important;
+  }
+
+
+  /* OUR APPROACH */
+  .about-approach {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 55px 20px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .approach-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .approach-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .approach-grid p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+
+  /* CTA */
+  .about-cta {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 50px 20px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .about-cta h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+}
+/* =========================================
+   SECURITY FORCE - MOBILE ONLY
+   Do NOT affect other pages
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .security-solutions,
+  .security-meaning,
+  .security-services,
+  .security-industries,
+  .security-approach,
+  .security-special-section,
+  .electronic-security,
+  .security-audit,
+  .security-process,
+  .security-cta {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Main text areas */
+  .security-solutions-content,
+  .security-meaning .section-title,
+  .security-services .section-title,
+  .security-industries .section-title,
+  .security-approach .section-title,
+  .electronic-security .section-title,
+  .audit-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Headings */
+  .security-solutions h2,
+  .security-meaning h2,
+  .security-services h2,
+  .security-industries h2,
+  .security-approach h2,
+  .electronic-security h2,
+  .security-audit h2,
+  .security-process h2 {
+    max-width: 100% !important;
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Paragraphs */
+  .security-solutions p,
+  .security-meaning p,
+  .security-services p,
+  .security-industries p,
+  .security-approach p,
+  .electronic-security p,
+  .security-audit p,
+  .security-process p {
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+
+  /* SECURITY SERVICES CARDS */
+  .security-service-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .security-service-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* INDUSTRIES */
+  .security-industry-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  .security-industry-grid > div {
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+  }
+
+
+  /* APPROACH */
+  .security-approach-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .security-approach-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* EVENT SECURITY */
+  .security-special-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+  }
+
+  .special-content,
+  .special-list {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .special-list > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* ELECTRONIC SECURITY */
+  .electronic-security-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .electronic-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* SECURITY AUDIT */
+  .security-audit {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+  }
+
+  .audit-content,
+  .audit-list {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .audit-list > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* SECURITY PROCESS */
+  .security-process-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .process-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* SECURITY ACRONYM */
+  .security-acronym {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .security-acronym > div {
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* CTA */
+  .security-cta {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .security-cta h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+}
