@@ -10282,3 +10282,50 @@ img.scroll-show,
     transform: translateY(30px) scale(0.98);
   }
 }
+/* ===== HOME ABOUT IMAGE CARD - MOBILE ONLY ===== */
+
+@media (max-width: 768px) {
+
+  .about-photo {
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  .about-photo img {
+    width: 100% !important;
+    height: 330px !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .about-photo .experience-box {
+    position: absolute !important;
+
+    /* keep the card inside the image */
+    right: 12px !important;
+    bottom: 12px !important;
+    left: 12px !important;
+
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 110px !important;
+
+    padding: 22px 18px !important;
+    box-sizing: border-box !important;
+
+    transform: none !important;
+  }
+
+  .about-photo .experience-box h3 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+  }
+
+  .about-photo .experience-box p {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+}
