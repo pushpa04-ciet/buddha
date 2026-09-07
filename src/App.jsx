@@ -53,25 +53,34 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   useEffect(() => {
-  const elements = document.querySelectorAll(".scroll-animate");
+  const elements = document.querySelectorAll(
+    "section, img, .about-vertical-card, .vertical-card, .service-card, .big-service, .industry-grid > div, .why-item, .value-box, .vm-card, .contact-box, .service-item, .feature-card"
+  );
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show");
+          entry.target.classList.add("scroll-show");
+        } else {
+          entry.target.classList.remove("scroll-show");
         }
       });
     },
     {
-      threshold: 0.15,
+      threshold: 0.12
     }
   );
 
-  elements.forEach((element) => observer.observe(element));
+  elements.forEach((element) => {
+    element.classList.add("scroll-hide");
+    observer.observe(element);
+  });
 
   return () => observer.disconnect();
 }, []);
+  
+
   return (
     <BrowserRouter>
     <ScrollToTop />

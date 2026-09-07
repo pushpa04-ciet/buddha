@@ -10170,3 +10170,54 @@ html {
     line-height: 1.15 !important;
   }
 }
+/* ===== PROFESSIONAL SCROLL ANIMATION ===== */
+
+.scroll-hide {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Images */
+img.scroll-hide {
+  transform: translateY(30px) scale(0.97);
+}
+
+img.scroll-show {
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 0.7s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .scroll-hide {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  .scroll-show {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity 0.55s ease,
+      transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  img.scroll-hide {
+    transform: translateY(25px) scale(0.98);
+  }
+
+  img.scroll-show {
+    transform: translateY(0) scale(1);
+  }
+}
