@@ -9633,3 +9633,170 @@ html {
     letter-spacing: 0.8px !important;
   }
 }
+/* =========================================
+   MOBILE RESPONSIVE FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* Prevent the whole website from going sideways */
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  /* -------------------------
+     ABOUT US
+     ------------------------- */
+
+  .about-home {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-template-columns: 1fr !important;
+    gap: 35px !important;
+    padding: 55px 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-home-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-photo {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-photo img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+
+  /* -------------------------
+     ABOUT BUSINESS VERTICALS
+     ------------------------- */
+
+  .about-vertical-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-vertical-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-vertical-card h3,
+  .about-vertical-card p,
+  .about-vertical-card li {
+    max-width: 100% !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+
+  /* -------------------------
+     SERVICES / SECURITY FORCE
+     ------------------------- */
+
+  .service-main-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-template-columns: 1fr !important;
+    box-sizing: border-box !important;
+  }
+
+  .big-service {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .service-image {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .service-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  .service-info {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* -------------------------
+     INDUSTRY / EXPERTISE GRIDS
+     ------------------------- */
+
+  .industry-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-template-columns: 1fr !important;
+    box-sizing: border-box !important;
+  }
+
+  .industry-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* -------------------------
+     VISION & MISSION
+     ------------------------- */
+
+  .vm-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .vm-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .vm-card h2,
+  .vm-card p {
+    max-width: 100% !important;
+  }
+
+
+  /* -------------------------
+     ALL MOBILE IMAGES
+     ------------------------- */
+
+  img {
+    max-width: 100% !important;
+  }
+}
