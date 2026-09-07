@@ -53,6 +53,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   useEffect(() => {
+    
   const elements = document.querySelectorAll(".scroll-animate");
 
   const observer = new IntersectionObserver(
@@ -67,6 +68,7 @@ function App() {
       threshold: 0.15,
     }
   );
+  
 
   elements.forEach((element) => observer.observe(element));
 
