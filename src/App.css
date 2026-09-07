@@ -10328,4 +10328,95 @@ img.scroll-show,
     font-size: 14px !important;
     line-height: 1.4 !important;
   }
+}/* ===== SECURITY PHILOSOPHY - MOBILE FIX ONLY ===== */
+
+@media (max-width: 768px) {
+
+  .security-meaning .security-acronym {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 15px 12px !important;
+
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+
+    overflow: hidden !important;
+  }
+
+  .security-meaning .security-acronym > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+
+    overflow: hidden !important;
+  }
+
+  .security-meaning .security-acronym strong {
+    flex-shrink: 0 !important;
+  }
+
+  .security-meaning .security-acronym span {
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+}
+/* ===== SECURITY PHILOSOPHY - MOBILE FIX ONLY ===== */
+
+@media (max-width: 768px) {
+
+  .security-meaning .security-acronym {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 15px 12px !important;
+
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+
+    overflow: hidden !important;
+  }
+
+  .security-meaning .security-acronym > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+
+    overflow: hidden !important;
+  }
+
+  .security-meaning .security-acronym strong {
+    flex-shrink: 0 !important;
+  }
+
+  .security-meaning .security-acronym span {
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
 }
