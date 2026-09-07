@@ -12681,3 +12681,123 @@ a.scroll-show {
   }
 
 }
+/* CONTACT FORM TEXT VISIBILITY FIX */
+
+.contact-form textarea {
+  color: #071b34 !important;
+  background: #ffffff !important;
+  caret-color: #071b34 !important;
+}
+
+.contact-form textarea::placeholder {
+  color: #7a8795 !important;
+  opacity: 1 !important;
+}
+/* ============================= */
+/* WHATSAPP FLOATING BUTTON */
+/* ============================= */
+
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 25px;
+  width: 58px;
+  height: 58px;
+  background: #25D366;
+  color: #ffffff !important;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  font-size: 30px;
+  font-weight: 700;
+  z-index: 99999;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-float span {
+  color: #ffffff;
+  line-height: 1;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    right: 16px;
+    bottom: 18px;
+    width: 54px;
+    height: 54px;
+    font-size: 27px;
+  }
+}
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float img {
+    width: 25px;
+    height: 25px;
+  }
+}
+/* ============================= */
+/* WHATSAPP FLOATING ANIMATION */
+/* ============================= */
+
+.whatsapp-float {
+  animation: whatsappPulse 2s infinite ease-in-out;
+}
+
+.whatsapp-float svg {
+  animation: whatsappIcon 1.5s infinite ease-in-out;
+}
+
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes whatsappIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  40% {
+    transform: rotate(8deg);
+  }
+
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  80% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
