@@ -15,6 +15,8 @@ import Contact from "./assets/pages/contact";
 import Industries from "./assets/pages/Industries";
 import Footer from "./assets/pages/Footer";
 import emailjs from "@emailjs/browser";
+import Housekeeping from "./assets/pages/Housekeeping";
+import IndustrialManpower from "./assets/pages/IndustrialManpower";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -54,7 +56,7 @@ function App() {
   const [quoteOpen, setQuoteOpen] = useState(false);
   useEffect(() => {
   const elements = document.querySelectorAll(
-    "section, img, .about-vertical-card, .vertical-card, .service-card, .big-service, .industry-grid > div, .why-item, .value-box, .vm-card, .contact-box, .service-item, .feature-card"
+    "section, img, .about-vertical-card, .vertical-card,  .vertical-service-card, .service-card, .big-service, .industry-grid > div, .why-item, .value-box, .vm-card, .contact-box, .service-item, .feature-card"
   );
 
   const observer = new IntersectionObserver(
@@ -119,19 +121,41 @@ function App() {
     </Link>
 
     <div className="services-menu">
-      <span className="services-link">
-        Services ▾
-      </span>
 
-      <div className="services-dropdown">
-        <Link
-          to="/security-force"
-          onClick={() => setMenuOpen(false)}
-        >
-          🛡️ Buddha Security Force
-        </Link>
-      </div>
-    </div>
+  <Link
+    to="/services"
+    className="services-link"
+    onClick={() => setMenuOpen(false)}
+  >
+    Services ▾
+  </Link>
+
+  <div className="services-dropdown">
+
+    <Link
+      to="/security-force"
+      onClick={() => setMenuOpen(false)}
+    >
+      🛡️ Buddha Security Services
+    </Link>
+
+    <Link
+      to="/housekeeping"
+      onClick={() => setMenuOpen(false)}
+    >
+      ✨ Housekeeping Services
+    </Link>
+
+    <Link
+      to="/industrial-manpower"
+      onClick={() => setMenuOpen(false)}
+    >
+      👷 Industrial Manpower
+    </Link>
+
+  </div>
+
+</div>
 
     <Link to="/why-us" onClick={() => setMenuOpen(false)}>
       Why Choose Us
@@ -285,6 +309,12 @@ function App() {
             <SecurityForce />
           }
         />
+        <Route path="/housekeeping" element={<Housekeeping />} />
+
+<Route
+  path="/industrial-manpower"
+  element={<IndustrialManpower />}
+/>
 
 
         <Route

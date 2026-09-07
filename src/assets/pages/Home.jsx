@@ -236,6 +236,16 @@ function Home() {
             professional supervision and systematic reporting to
             create a safer and more controlled workplace.
           </p>
+          <p>
+  We manage everything, you just focus on your business.
+  Our team takes responsibility for the security requirements
+  entrusted to us while maintaining professional service,
+  supervision and reporting.
+</p>
+
+<p>
+  We would be proud to be your security partner.
+</p>
 
         </div>
 
@@ -394,9 +404,9 @@ function Home() {
         <li>Facility Maintenance Assistance</li>
       </ul>
 
-      <a href="/services">
-        Explore Housekeeping Services →
-      </a>
+      <Link to="/housekeeping">
+  Explore Housekeeping Services →
+</Link>
 
     </div>
   </div>
@@ -443,9 +453,9 @@ function Home() {
         <li>Workforce Supervision</li>
       </ul>
 
-      <a href="/services">
-        Explore Industrial Manpower →
-      </a>
+      <Link to="/industrial-manpower">
+  Explore Industrial Manpower →
+</Link>
 
     </div>
   </div>

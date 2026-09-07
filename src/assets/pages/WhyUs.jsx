@@ -149,130 +149,179 @@ function WhyUs() {
       </section>
 
 
-      {/* ================= TWO VERTICALS ================= */}
+      {/* ================= THREE VERTICALS ================= */}
 
-      <section className="vertical-section">
+<section className="vertical-section">
 
-        <div className="section-heading">
+  <div className="section-heading">
 
-          <p>OUR TWO KEY VERTICALS</p>
+    <p>OUR KEY VERTICALS</p>
 
-          <h2>
-            Complete Facility
-            <br />
-            <span>Solutions.</span>
-          </h2>
+    <h2>
+      Complete Facility
+      <br />
+      <span>Solutions.</span>
+    </h2>
 
-          <p className="heading-description">
-            Buddha Security Facilities provides professional services
-            through two specialized verticals designed to support
-            organizations across different operational requirements.
-          </p>
+    <p className="heading-description">
+      Buddha Security Facilities provides professional services
+      through specialized verticals designed to support
+      organizations across different operational requirements.
+    </p>
 
-        </div>
-
-
-        <div className="vertical-grid">
-
-
-          {/* SECURITY FORCE */}
-
-          <div className="vertical-card security-vertical">
-
-            <div className="vertical-number">
-              01
-            </div>
-
-            <div className="vertical-icon">
-              🛡
-            </div>
-
-            <p className="vertical-tag">
-              SECURITY VERTICAL
-            </p>
-
-            <h2>
-              Buddha
-              <br />
-              <span>Security Force</span>
-            </h2>
-
-            <p>
-              Professional security personnel and tailored security
-              solutions for industries, corporations and businesses.
-            </p>
-
-            <ul>
-
-              <li>✓ Trained & Professional Security Personnel</li>
-
-              <li>✓ 24×7 Security & Surveillance</li>
-
-              <li>✓ Access Control & Visitor Management</li>
-
-              <li>✓ Industrial & Corporate Security</li>
-
-              <li>✓ Emergency Response</li>
-
-            </ul>
-
-            <Link to="/security-force">
-              Explore Security Force →
-            </Link>
-
-          </div>
-
-
-          {/* ELECTRONIC SECURITY */}
-
-<div className="vertical-card electronic-vertical">
-
-  <div className="vertical-number">
-    02
   </div>
 
-  <div className="vertical-icon">
-    ◉
+
+  <div className="vertical-grid">
+
+
+    {/* ================= SECURITY FORCE ================= */}
+
+    <div className="vertical-card security-vertical">
+
+      <div className="vertical-number">
+        01
+      </div>
+
+      <div className="vertical-icon">
+        🛡
+      </div>
+
+      <p className="vertical-tag">
+        SECURITY VERTICAL
+      </p>
+
+      <h2>
+        Buddha
+        <br />
+        <span>Security Force</span>
+      </h2>
+
+      <p>
+        Professional security personnel and tailored security
+        solutions for industries, corporations and businesses.
+      </p>
+
+      <ul>
+
+        <li>✓ Trained & Professional Security Personnel</li>
+
+        <li>✓ 24×7 Security & Surveillance</li>
+
+        <li>✓ Access Control & Visitor Management</li>
+
+        <li>✓ Industrial & Corporate Security</li>
+
+        <li>✓ Emergency Response</li>
+
+      </ul>
+
+      <Link to="/security-force">
+        Explore Security Force →
+      </Link>
+
+    </div>
+
+
+    {/* ================= HOUSEKEEPING ================= */}
+
+    <div className="vertical-card housekeeping-vertical">
+
+      <div className="vertical-number">
+        02
+      </div>
+
+      <div className="vertical-icon">
+        ✨
+      </div>
+
+      <p className="vertical-tag">
+        HOUSEKEEPING VERTICAL
+      </p>
+
+      <h2>
+        Buddha
+        <br />
+        <span>Housekeeping Services</span>
+      </h2>
+
+      <p>
+        Professional housekeeping services designed to maintain
+        clean, hygienic and well-organized workplaces.
+      </p>
+
+      <ul>
+
+        <li>✓ Workplace Cleaning & Maintenance</li>
+
+        <li>✓ Office Housekeeping Support</li>
+
+        <li>✓ Common Area Maintenance</li>
+
+        <li>✓ Hygiene & Cleanliness Support</li>
+
+        <li>✓ Regular Supervision</li>
+
+      </ul>
+
+      <Link to="/housekeeping">
+        Explore Housekeeping Services →
+      </Link>
+
+    </div>
+
+
+    {/* ================= INDUSTRIAL MANPOWER ================= */}
+
+    <div className="vertical-card manpower-vertical">
+
+      <div className="vertical-number">
+        03
+      </div>
+
+      <div className="vertical-icon">
+        👷
+      </div>
+
+      <p className="vertical-tag">
+        INDUSTRIAL MANPOWER
+      </p>
+
+      <h2>
+        Buddha
+        <br />
+        <span>Industrial Manpower</span>
+      </h2>
+
+      <p>
+        Dependable manpower support for industrial and commercial
+        operations with reliable workforce deployment.
+      </p>
+
+      <ul>
+
+        <li>✓ Industrial Support Staff</li>
+
+        <li>✓ General Manpower Support</li>
+
+        <li>✓ Workplace Support Personnel</li>
+
+        <li>✓ Operational Support</li>
+
+        <li>✓ Regular Supervision</li>
+
+      </ul>
+
+      <Link to="/industrial-manpower">
+        Explore Industrial Manpower →
+      </Link>
+
+    </div>
+
+
   </div>
 
-  <p className="vertical-tag">
-    ELECTRONIC SECURITY VERTICAL
-  </p>
-
-  <h2>
-    Buddha
-    <br />
-    <span>Electronic Security Services</span>
-  </h2>
-
-  <p>
-    Technology-enabled security solutions designed to strengthen
-    surveillance, access control and workplace safety.
-  </p>
-
-  <ul>
-
-    <li>✓ CCTV & Surveillance Support</li>
-
-    <li>✓ Access Control Systems</li>
-
-    <li>✓ Fire Alarm Systems</li>
-
-    <li>✓ Burglar Alarm Systems</li>
-
-    <li>✓ Attendance & Employee Tracking</li>
-
-    <li>✓ Doors & Gates Automation</li>
-
-  </ul>
-
-  <Link to="/security-force">
-    Explore Electronic Security →
-  </Link>
-</div>
-</div>
 </section>
-
 
       {/* ================= INDUSTRIES ================= */}
 
