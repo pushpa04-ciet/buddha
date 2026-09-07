@@ -79,7 +79,15 @@ function App() {
       <nav className="navbar">
 
   <Link to="/" className="logo">
-  <img src="/logo.jpg" alt="Buddha Security Facilities" />
+  <img
+    src="/images/buddha-logo.jpg"
+    alt="Buddha Facilities Logo"
+  />
+
+  <span className="logo-name">
+    BUDDHA
+    <small>SECURITY FACILITIES</small>
+  </span>
 </Link>
 
   <button

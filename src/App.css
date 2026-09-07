@@ -9482,3 +9482,81 @@ html {
   }
 
 }
+/* =========================
+   BUDDHA LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo img {
+    width: 55px;
+    height: 55px;
+  }
+}/* LOGO + COMPANY NAME */
+
+.logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+}
+
+.logo img {
+  width: 60px !important;
+  height: 60px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.logo-name {
+  display: flex !important;
+  flex-direction: column !important;
+  color: white !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.logo-name small {
+  margin-top: 4px !important;
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  color: #dbe7f3 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .logo {
+    gap: 8px !important;
+  }
+
+  .logo img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .logo-name {
+    font-size: 14px !important;
+  }
+
+  .logo-name small {
+    font-size: 7px !important;
+    letter-spacing: 1px !important;
+  }
+}
