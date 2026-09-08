@@ -20354,3 +20354,26 @@ body.page-founder .founder-experience-card:nth-child(5) {
   }
 
 }
+/* ABOUT HERO CONTENT - MOVE SLIGHTLY UP */
+.about-hero .inner-hero-content {
+  transform: translateY(-35px);
+}
+@media (max-width: 768px) {
+  .home-hero,
+  .hero {
+    min-height: 680px;
+    height: auto;
+  }
+
+  .home-hero .hero-content,
+  .hero .hero-content {
+    padding: 100px 20px 60px;
+  }
+
+  .home-hero .hero-card,
+  .hero .hero-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 25px auto 0;
+  }
+}
