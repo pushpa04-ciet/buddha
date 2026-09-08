@@ -65,7 +65,9 @@ function Industries() {
       title: "Events & Exhibitions",
       text: "Crowd management, access control and event security support for organized gatherings."
     }
+    
   ];
+  
 
   return (
     <>
@@ -82,10 +84,9 @@ function Industries() {
             <span>Different Industries.</span>
           </h1>
 
-          <p>
-            Customized security solutions designed around the
-            requirements of your organization.
-          </p>
+          <p className="hero-description">
+  Customized security solutions designed around the requirements of your organization.
+</p>
         </div>
       </section>
 
@@ -176,29 +177,29 @@ function Industries() {
 
         <div className="industry-approach-points">
 
-          <div>
-            <span>01</span>
-            <h3>Understand</h3>
-            <p>Understand your business and security environment.</p>
-          </div>
+  <div className="approach-slide active">
+    <span>01</span>
+    <h3>Understand</h3>
+    <p>Understand your business and security environment.</p>
+  </div>
 
-          <div>
-            <span>02</span>
-            <h3>Assess</h3>
-            <p>Identify risks, vulnerabilities and operational requirements.</p>
-          </div>
+  <div className="approach-slide">
+    <span>02</span>
+    <h3>Assess</h3>
+    <p>Identify risks, vulnerabilities and operational requirements.</p>
+  </div>
 
-          <div>
-            <span>03</span>
-            <h3>Customize</h3>
-            <p>Develop a security approach suited to your organization.</p>
-          </div>
+  <div className="approach-slide">
+    <span>03</span>
+    <h3>Customize</h3>
+    <p>Develop a security approach suited to your organization.</p>
+  </div>
 
-          <div>
-            <span>04</span>
-            <h3>Deploy</h3>
-            <p>Deploy trained and disciplined security personnel.</p>
-          </div>
+  <div className="approach-slide">
+    <span>04</span>
+    <h3>Deploy</h3>
+    <p>Deploy trained and disciplined security personnel.</p>
+  </div>
 
         </div>
 
@@ -215,8 +216,8 @@ function Industries() {
           Protect Your People.
         </h2>
 
-        <a href="tel:9908540044">
-          Call 9908540044
+        <a href="tel:8096083322">
+          Call 8096083322
         </a>
 
       </section>

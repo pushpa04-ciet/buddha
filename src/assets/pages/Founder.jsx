@@ -1,4 +1,5 @@
 function Founder() {
+  
   return (
     <>
       {/* FOUNDER HERO */}
@@ -171,76 +172,121 @@ function Founder() {
 
         <div className="experience-grid">
 
-          <div className="founder-experience-card">
-            <strong>01</strong>
+  <div className="founder-experience-card">
+    <strong>01</strong>
 
-            <h3>
-              Manufacturing
-            </h3>
+    <div className="experience-status">
+      <span>EXPERTISE</span>
+      <span>95%</span>
+    </div>
 
-            <p>
-              Security management solutions designed around
-              manufacturing and operational environments.
-            </p>
-          </div>
+    <h3>Manufacturing</h3>
 
+    <p>
+      Security management solutions designed around
+      manufacturing and operational environments.
+    </p>
 
-          <div className="founder-experience-card">
-            <strong>02</strong>
+    <div className="expertise-bar">
+      <div style={{ width: "95%" }}></div>
+    </div>
 
-            <h3>
-              Hospitality
-            </h3>
-
-            <p>
-              Professional security support for hospitality
-              environments and their operational requirements.
-            </p>
-          </div>
+    <small>SECURITY COVERAGE</small>
+  </div>
 
 
-          <div className="founder-experience-card">
-            <strong>03</strong>
+  <div className="founder-experience-card">
+    <strong>02</strong>
 
-            <h3>
-              Service
-            </h3>
+    <div className="experience-status">
+      <span>EXPERTISE</span>
+      <span>92%</span>
+    </div>
 
-            <p>
-              Security management systems tailored to service
-              organizations and workplace requirements.
-            </p>
-          </div>
+    <h3>Hospitality</h3>
 
+    <p>
+      Professional security support for hospitality
+      environments and their operational requirements.
+    </p>
 
-          <div className="founder-experience-card">
-            <strong>04</strong>
+    <div className="expertise-bar">
+      <div style={{ width: "92%" }}></div>
+    </div>
 
-            <h3>
-              Dairy
-            </h3>
-
-            <p>
-              Security management support for dairy operations
-              and their premises.
-            </p>
-          </div>
+    <small>SECURITY COVERAGE</small>
+  </div>
 
 
-          <div className="founder-experience-card">
-            <strong>05</strong>
+  <div className="founder-experience-card">
+    <strong>03</strong>
 
-            <h3>
-              Construction
-            </h3>
+    <div className="experience-status">
+      <span>EXPERTISE</span>
+      <span>90%</span>
+    </div>
 
-            <p>
-              Security management systems supporting construction
-              sites, people, materials and operational areas.
-            </p>
-          </div>
+    <h3>Service</h3>
 
-        </div>
+    <p>
+      Security management systems tailored to service
+      organizations and workplace requirements.
+    </p>
+
+    <div className="expertise-bar">
+      <div style={{ width: "90%" }}></div>
+    </div>
+
+    <small>SECURITY COVERAGE</small>
+  </div>
+
+
+  <div className="founder-experience-card">
+    <strong>04</strong>
+
+    <div className="experience-status">
+      <span>EXPERTISE</span>
+      <span>88%</span>
+    </div>
+
+    <h3>Dairy</h3>
+
+    <p>
+      Security management support for dairy operations
+      and their premises.
+    </p>
+
+    <div className="expertise-bar">
+      <div style={{ width: "88%" }}></div>
+    </div>
+
+    <small>SECURITY COVERAGE</small>
+  </div>
+
+
+  <div className="founder-experience-card">
+    <strong>05</strong>
+
+    <div className="experience-status">
+      <span>EXPERTISE</span>
+      <span>94%</span>
+    </div>
+
+    <h3>Construction</h3>
+
+    <p>
+      Security management systems supporting construction
+      sites, people, materials and operational areas.
+    </p>
+
+    <div className="expertise-bar">
+      <div style={{ width: "94%" }}></div>
+    </div>
+
+    <small>SECURITY COVERAGE</small>
+  </div>
+
+</div>
 
       </section>
 
@@ -301,8 +347,8 @@ function Founder() {
 
         <div className="cta-actions">
 
-          <a href="tel:9908540044">
-            Call 9908540044
+          <a href="tel:8096083322">
+            Call 8096083322
           </a>
 
           <a href="/contact">

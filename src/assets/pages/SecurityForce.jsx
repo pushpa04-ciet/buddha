@@ -1,4 +1,34 @@
+import { useState } from "react";
 function SecurityForce() {
+   const [processIndex, setProcessIndex] = useState(0);
+
+  const securityProcess = [
+    {
+      number: "01",
+      title: "Security Assessment",
+      text: "Understand the security environment and identify the requirements of your organization."
+    },
+    {
+      number: "02",
+      title: "Customized Security Plan",
+      text: "Develop a security plan customized to the specific needs and requirements of the organization."
+    },
+    {
+      number: "03",
+      title: "Professional Deployment",
+      text: "Deploy trained and professional security personnel according to the responsibilities required."
+    },
+    {
+      number: "04",
+      title: "Regular Supervision",
+      text: "Maintain regular supervision to ensure discipline, accountability and service quality."
+    },
+    {
+      number: "05",
+      title: "Continuous Improvement",
+      text: "Review security requirements and continuously improve the effectiveness of the security approach."
+    }
+  ];
   return (
     <>
       {/* ================= SECURITY INTRO ================= */}
@@ -125,36 +155,103 @@ function SecurityForce() {
 
         </div>
 
-        <div className="security-service-grid">
+        <div className="security-service-slider">
 
-          <div><span>01</span><h3>24×7 Security & Surveillance</h3></div>
+  <button
+    className="security-service-arrow left"
+    onClick={() =>
+      document.querySelector(".security-service-track").scrollBy({
+        left: -350,
+        behavior: "smooth",
+      })
+    }
+  >
+    ‹
+  </button>
 
-          <div><span>02</span><h3>Trained Security Guards & Supervisors</h3></div>
+  <div className="security-service-track">
 
-          <div><span>03</span><h3>Visitor & Access Control</h3></div>
+    <div className="security-service-card">
+      <span>01</span>
+      <h3>24×7 Security & Surveillance</h3>
+      <p>Round-the-clock security monitoring and protection for your premises.</p>
+    </div>
 
-          <div><span>04</span><h3>Employee & Vehicle Entry Management</h3></div>
+    <div className="security-service-card">
+      <span>02</span>
+      <h3>Trained Security Guards & Supervisors</h3>
+      <p>Professional and disciplined personnel trained for different security requirements.</p>
+    </div>
 
-          <div><span>05</span><h3>Premises Patrolling</h3></div>
+    <div className="security-service-card">
+      <span>03</span>
+      <h3>Visitor & Access Control</h3>
+      <p>Controlled visitor entry and access management for safer premises.</p>
+    </div>
 
-          <div><span>06</span><h3>Emergency Response & Incident Reporting</h3></div>
-          <div>
-  <span>07</span>
-  <h3>CCTV Monitoring Support</h3>
+    <div className="security-service-card">
+      <span>04</span>
+      <h3>Employee & Vehicle Entry Management</h3>
+      <p>Systematic management of employee and vehicle movement.</p>
+    </div>
+
+    <div className="security-service-card">
+      <span>05</span>
+      <h3>Premises Patrolling</h3>
+      <p>Regular patrolling to identify and prevent security concerns.</p>
+    </div>
+
+    <div className="security-service-card">
+      <span>06</span>
+      <h3>Emergency Response & Incident Reporting</h3>
+      <p>Quick response and proper reporting during security incidents.</p>
+    </div>
+
+    <div className="security-service-card">
+      <span>07</span>
+      <h3>CCTV Monitoring Support</h3>
+      <p>Support for effective CCTV surveillance and monitoring.</p>
+    </div>
+
+    <div className="security-service-card">
+      <span>08</span>
+      <h3>Fire & Safety Support</h3>
+      <p>Security personnel support for workplace fire and safety requirements.</p>
+    </div>
+
+    <div className="security-service-card">
+      <span>09</span>
+      <h3>Theft & Pilferage Prevention</h3>
+      <p>Security practices designed to reduce theft and pilferage risks.</p>
+    </div>
+
+    <div className="security-service-card">
+      <span>10</span>
+      <h3>Security Risk Identification</h3>
+      <p>Identification of potential vulnerabilities and security risks.</p>
+    </div>
+
+    <div className="security-service-card">
+      <span>11</span>
+      <h3>Security Supervision & Management</h3>
+      <p>Continuous supervision to maintain discipline and service quality.</p>
+    </div>
+
+  </div>
+
+  <button
+    className="security-service-arrow right"
+    onClick={() =>
+      document.querySelector(".security-service-track").scrollBy({
+        left: 350,
+        behavior: "smooth",
+      })
+    }
+  >
+    ›
+  </button>
+
 </div>
-
-<div>
-  <span>08</span>
-  <h3>Fire & Safety Support</h3>
-</div>
-
-          <div><span>07</span><h3>Theft & Pilferage Prevention</h3></div>
-
-          <div><span>08</span><h3>Security Risk Identification</h3></div>
-
-          <div><span>09</span><h3>Security Supervision & Management</h3></div>
-
-        </div>
 
       </section>
 
@@ -501,6 +598,7 @@ function SecurityForce() {
           </p>
 
         </div>
+        
 
 
         <div className="security-process-grid">
@@ -574,8 +672,8 @@ function SecurityForce() {
           for your organization.
         </p>
 
-        <a href="tel:9908540044">
-          Call 9908540044
+        <a href="tel:8096083322">
+          Call 8096083322
         </a>
 
       </section>

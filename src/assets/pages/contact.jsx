@@ -47,8 +47,8 @@ function Contact() {
 
             <div>
               <span>CALL US</span>
-              <a href="tel:9908540044">
-                9908540044
+              <a href="tel:8096083322 ">
+                8096083322 
               </a>
             </div>
 
@@ -167,8 +167,8 @@ function Contact() {
           Protect Your People.
         </h2>
 
-        <a href="tel:9908540044">
-          Call 9908540044
+        <a href="tel:8096083322 ">
+          Call 8096083322 
         </a>
 
       </section>

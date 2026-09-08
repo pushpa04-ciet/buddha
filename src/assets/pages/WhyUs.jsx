@@ -401,8 +401,8 @@ function WhyUs() {
           Dependable Service.
         </h2>
 
-        <a href="tel:9908540044">
-          ☎ 9908540044
+        <a href="tel:8096083322">
+          ☎ 8096083322
         </a>
 
       </section>
@@ -424,8 +424,8 @@ function WhyUs() {
           Security You Can Trust • Service You Can Depend On
         </p>
 
-        <a href="tel:9908540044">
-          Call 9908540044
+        <a href="tel:8096083322">
+          Call 8096083322
         </a>
 
       </section>

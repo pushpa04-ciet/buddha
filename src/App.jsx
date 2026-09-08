@@ -17,6 +17,9 @@ import Footer from "./assets/pages/Footer";
 import emailjs from "@emailjs/browser";
 import Housekeeping from "./assets/pages/Housekeeping";
 import IndustrialManpower from "./assets/pages/IndustrialManpower";
+import SecurityPartner from "./assets/pages/SecurityPartner";
+
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -51,9 +54,45 @@ function ScrollToTop() {
 
   return null;
 }
+function SecurityNetworkAnimation() {
+  return (
+    <div className="security-network-animation">
+
+      <div className="security-network-ring ring-one"></div>
+      <div className="security-network-ring ring-two"></div>
+
+      <div className="security-node node-one"></div>
+      <div className="security-node node-two"></div>
+      <div className="security-node node-three"></div>
+      <div className="security-node node-four"></div>
+      <div className="security-node node-five"></div>
+      <div className="security-node node-six"></div>
+
+      <div className="security-line line-one"></div>
+      <div className="security-line line-two"></div>
+      <div className="security-line line-three"></div>
+      <div className="security-line line-four"></div>
+
+      <div className="security-scan-dot"></div>
+
+    </div>
+  );
+}
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  useEffect(() => {
+  const handleScroll = () => {
+    setShowScrollTop(window.scrollY > 300);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
  function ScrollAnimations() {
   const { pathname } = useLocation();
 
@@ -94,6 +133,7 @@ function App() {
       });
 
     }, 80);
+    
 
     return () => {
 
@@ -109,12 +149,77 @@ function App() {
 
   return null;
 }
-  
+  function PageBackgroundAnimation() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    document.body.classList.remove(
+      "page-home",
+      "page-about",
+      "page-industries",
+      "page-security",
+      "page-housekeeping",
+      "page-manpower",
+      "page-partner",
+      "page-why",
+      "page-founder",
+      "page-vision",
+      "page-contact",
+      "page-services"
+    );
+
+    if (pathname === "/") {
+      document.body.classList.add("page-home");
+    } else if (pathname === "/about") {
+      document.body.classList.add("page-about");
+    } else if (pathname === "/industries") {
+      document.body.classList.add("page-industries");
+    } else if (pathname === "/security-force") {
+      document.body.classList.add("page-security");
+    } else if (pathname === "/housekeeping") {
+      document.body.classList.add("page-housekeeping");
+    } else if (pathname === "/industrial-manpower") {
+      document.body.classList.add("page-manpower");
+    } else if (pathname === "/security-partner") {
+      document.body.classList.add("page-partner");
+    } else if (pathname === "/why-us") {
+      document.body.classList.add("page-why");
+    } else if (pathname === "/founder") {
+      document.body.classList.add("page-founder");
+    } else if (pathname === "/vision-mission") {
+      document.body.classList.add("page-vision");
+    } else if (pathname === "/contact") {
+      document.body.classList.add("page-contact");
+    } else if (pathname === "/services") {
+      document.body.classList.add("page-services");
+    }
+
+    return () => {
+      document.body.classList.remove(
+        "page-home",
+        "page-about",
+        "page-industries",
+        "page-security",
+        "page-housekeeping",
+        "page-manpower",
+        "page-partner",
+        "page-why",
+        "page-founder",
+        "page-vision",
+        "page-contact",
+        "page-services"
+      );
+    };
+  }, [pathname]);
+
+  return null;
+}
 
   return (
     <BrowserRouter>
     <ScrollToTop />
      <ScrollAnimations />
+     <SecurityNetworkAnimation />
 
       <nav className="navbar">
         <Link to="/" className="logo">
@@ -148,6 +253,10 @@ function App() {
     <Link to="/industries" onClick={() => setMenuOpen(false)}>
       Industries
     </Link>
+    <Link to="/security-partner" onClick={() => setMenuOpen(false)}>
+  Security Partner
+</Link>
+
 
     <div className="services-menu">
 
@@ -181,10 +290,12 @@ function App() {
     >
       👷 Industrial Manpower
     </Link>
+    
 
   </div>
 
 </div>
+
 
     <Link to="/why-us" onClick={() => setMenuOpen(false)}>
       Why Choose Us
@@ -234,6 +345,16 @@ function App() {
     />
   </svg>
 </a>
+{showScrollTop && (
+  <button
+    type="button"
+    className="scroll-top-btn"
+    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    aria-label="Go to top"
+  >
+    𖤹
+  </button>
+)}
 
 </nav>
 {quoteOpen && (
@@ -366,6 +487,11 @@ function App() {
 <Route
   path="/industrial-manpower"
   element={<IndustrialManpower />}
+  
+/>
+<Route
+  path="/security-partner"
+  element={<SecurityPartner />}
 />
 
 

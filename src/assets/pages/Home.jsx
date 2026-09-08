@@ -1,23 +1,87 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [autoQuoteOpen, setAutoQuoteOpen] = useState(false);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % 3);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + 3) % 3);
+  };
+  useEffect(() => {
+  const timer = setInterval(() => {
+    nextSlide();
+  }, 90000);
+
+  return () => clearInterval(timer);
+}, []);
+
+useEffect(() => {
+  const quoteTimer = setInterval(() => {
+    setAutoQuoteOpen(true);
+  }, 90000);
+
+  return () => clearInterval(quoteTimer);
+}, []);
+
+
+
   return (
     <>
-      {/* =========================================================
-          HERO SECTION
-      ========================================================= */}
-      <section className="hero">
-        <div className="hero-bg"></div>
-        <div className="hero-overlay"></div>
+      {/* ================= HERO ================= */}
+<section className="hero">
+  <div className="hero-bg"></div>
+  <div className="hero-overlay"></div>
 
-        <div className="hero-container">
+  <div className="hero-container">
+
+    {/* LEFT ARROW */}
+    <button
+      type="button"
+      className="hero-arrow hero-arrow-left"
+      onClick={prevSlide}
+      aria-label="Previous slide"
+    >
+      ‹
+    </button>
+
+    {/* RIGHT ARROW */}
+    <button
+      type="button"
+      className="hero-arrow hero-arrow-right"
+      onClick={nextSlide}
+      aria-label="Next slide"
+    >
+      ›
+    </button>
+
+    {/* SLIDER */}
+    <div className="hero-slider">
+      <div
+        className="hero-slider-track"
+        style={{
+          transform: `translateX(-${currentSlide * 33.333333}%)`
+        }}
+      >
+
+        {/* ================= SLIDE 1 ================= */}
+        <div className="hero-slide slide-security">
 
           <div className="hero-content">
+
+            <div className="hero-brand">
+              <h2>BUDDHA SECURITY FACILITIES</h2>
+              <span>Prevent and Protect</span>
+            </div>
 
             <div className="hero-line"></div>
 
             <p className="hero-small">
-              PREVENT AND PROTECT
+              PROFESSIONAL SECURITY
             </p>
 
             <h1>
@@ -29,54 +93,186 @@ function Home() {
             </h1>
 
             <p className="hero-text">
-              Buddha Security Facilities provides professional
-              security, housekeeping and industrial manpower
-              solutions designed around the specific needs of
-              your organization.
+              Professional security solutions designed to protect
+              people, property and business operations.
             </p>
 
             <div className="hero-buttons">
-
-              <a
-                href="tel:8096083322"
-                className="btn-primary"
-              >
+              <a href="tel:8096083322" className="btn-primary">
                 Get a Quote →
               </a>
 
-              <Link
-                to="/services"
-                className="btn-outline"
-              >
-                Explore Services
+              <Link to="/security-force" className="btn-outline">
+                Explore Security
               </Link>
-
             </div>
 
           </div>
 
-
+          {/* SECURITY CARD */}
           <div className="hero-card">
-
-            <div className="hero-card-icon">
-              🛡️
-            </div>
+            <div className="hero-card-icon">🛡️</div>
 
             <strong>
-              PREVENT
+              SECURITY
               <br />
-              & PROTECT
+              SERVICES
             </strong>
 
             <span>
-              Professional Service
+              Professional Protection
             </span>
-
           </div>
 
         </div>
-      </section>
 
+
+        {/* ================= SLIDE 2 ================= */}
+        <div className="hero-slide slide-housekeeping">
+
+          <div className="hero-content">
+
+            <div className="hero-brand">
+              <h2>BUDDHA SECURITY FACILITIES</h2>
+              <span>Prevent and Protect</span>
+            </div>
+
+            <div className="hero-line"></div>
+
+            <p className="hero-small">
+              HOUSEKEEPING SERVICES
+            </p>
+
+            <h1>
+              Clean Spaces.
+              <br />
+              <span>Professional</span>
+              <br />
+              Workplaces.
+            </h1>
+
+            <p className="hero-text">
+              Reliable housekeeping services focused on workplace
+              hygiene, cleanliness and professional facility support.
+            </p>
+
+            <div className="hero-buttons">
+              <Link to="/housekeeping" className="btn-primary">
+                Get a Quote →
+              </Link>
+
+              <Link to="/housekeeping" className="btn-outline">
+                Explore Housekeeping
+              </Link>
+            </div>
+
+          </div>
+
+          {/* HOUSEKEEPING CARD */}
+          <div className="hero-card">
+            <div className="hero-card-icon">✨</div>
+
+            <strong>
+              HOUSEKEEPING
+              <br />
+              SERVICES
+            </strong>
+
+            <span>
+              Clean • Safe • Professional
+            </span>
+          </div>
+
+        </div>
+
+
+        {/* ================= SLIDE 3 ================= */}
+        <div className="hero-slide slide-manpower">
+
+          <div className="hero-content">
+
+            <div className="hero-brand">
+              <h2>BUDDHA SECURITY FACILITIES</h2>
+              <span>Prevent and Protect</span>
+            </div>
+
+            <div className="hero-line"></div>
+
+            <p className="hero-small">
+              INDUSTRIAL MANPOWER
+            </p>
+
+            <h1>
+              Reliable People.
+              <br />
+              <span>Reliable</span>
+              <br />
+              Operations.
+            </h1>
+
+            <p className="hero-text">
+              Dependable skilled and semi-skilled manpower support
+              for industrial, warehouse and operational environments.
+            </p>
+
+            <div className="hero-buttons">
+              <Link to="/industrial-manpower" className="btn-primary">
+                Get a Quote →
+              </Link>
+
+              <Link
+                to="/industrial-manpower"
+                className="btn-outline"
+              >
+                Explore Manpower
+              </Link>
+            </div>
+
+          </div>
+
+          {/* MANPOWER CARD */}
+          <div className="hero-card">
+            <div className="hero-card-icon">👷</div>
+
+            <strong>
+              INDUSTRIAL
+              <br />
+              MANPOWER
+            </strong>
+
+            <span>
+              Skilled & Reliable Workforce
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    {/* DOTS */}
+    <div className="hero-dots">
+
+      <span
+        className={currentSlide === 0 ? "active" : ""}
+        onClick={() => setCurrentSlide(0)}
+      ></span>
+
+      <span
+        className={currentSlide === 1 ? "active" : ""}
+        onClick={() => setCurrentSlide(1)}
+      ></span>
+
+      <span
+        className={currentSlide === 2 ? "active" : ""}
+        onClick={() => setCurrentSlide(2)}
+      ></span>
+
+    </div>
+
+  </div>
+</section>
 
       {/* =========================================================
           TRUST / INTRO BAR
@@ -198,99 +394,79 @@ function Home() {
         </div>
 
       </section>
-
-
       {/* =========================================================
-          SECURITY PARTNER SECTION
-      ========================================================= */}
-      <section className="partner-home">
+    SECURITY VISUAL SHOWCASE
+========================================================= */}
+<section className="security-showcase">
 
-        <div className="partner-home-content">
+  <div className="security-showcase-heading">
+    <p className="section-tag">SECURITY IN ACTION</p>
 
-          <p className="section-tag">
-            YOUR SECURITY PARTNER
-          </p>
+    <h2>
+      Protection That
+      <br />
+      <span>You Can See.</span>
+    </h2>
 
-          <h2>
-            Security Is Not Just
-            <br />
-            <span>Guarding.</span>
-          </h2>
+    <p>
+      Professional security personnel, disciplined operations
+      and dependable protection for every environment.
+    </p>
+  </div>
 
-          <p>
-            We are a specialized security partner for Corporate
-            Offices, Universities and Commercial Complexes such as
-            Sricity.
-          </p>
+  <div className="security-image-grid">
 
-          <p>
-            Modern security requires much more than simply placing
-            personnel at an entrance. It involves managing vendor
-            entries, delivery verification, visitor movement,
-            CCTV monitoring and customer safety while maintaining
-            control over the physical and operational environment.
-          </p>
+    <div className="security-image-card">
+      <img
+        src="https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1200&q=85"
+        alt="Professional Security Guard"
+      />
 
-          <p>
-            Our focus is to combine disciplined manpower,
-            professional supervision and systematic reporting to
-            create a safer and more controlled workplace.
-          </p>
-          <p>
-  We manage everything, you just focus on your business.
-  Our team takes responsibility for the security requirements
-  entrusted to us while maintaining professional service,
-  supervision and reporting.
-</p>
+      <div className="security-image-overlay">
+        <span>01</span>
+        <h3>Professional Security</h3>
+        <p>Trained & disciplined personnel</p>
+        <Link to="/security-force" className="security-view-btn">
+    View Protection →
+  </Link>
+      </div>
+    </div>
 
-<p>
-  We would be proud to be your security partner.
-</p>
+    <div className="security-image-card featured">
+      <img
+        src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=85"
+        alt="Security Protection"
+      />
 
-        </div>
+      <div className="security-image-overlay">
+        <span>02</span>
+        <h3>Trusted Protection</h3>
+        <p>Workplace safety & security support</p>
+         <Link to="/security-force" className="security-view-btn">
+    View Protection →
+  </Link>
+      </div>
+    </div>
 
+    <div className="security-image-card">
+      <img
+        src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1200&q=85"
+        alt="Security Team"
+      />
 
-        <div className="partner-home-points">
+      <div className="security-image-overlay">
+        <span>03</span>
+        <h3>Reliable Workforce</h3>
+        <p>Professional service delivery</p>
+         <Link to="/security-force" className="security-view-btn">
+    View Protection →
+  </Link>
+      </div>
+    </div>
 
-          <div>
-            <span>01</span>
-            <h3>Vendor Entry Management</h3>
-            <p>
-              Controlled vendor movement and verification at
-              workplace entry points.
-            </p>
-          </div>
+  </div>
 
-          <div>
-            <span>02</span>
-            <h3>Delivery Verification</h3>
-            <p>
-              Supporting safe and systematic handling of incoming
-              deliveries.
-            </p>
-          </div>
-
-          <div>
-            <span>03</span>
-            <h3>CCTV Monitoring</h3>
-            <p>
-              Monitoring support to strengthen workplace
-              surveillance and awareness.
-            </p>
-          </div>
-
-          <div>
-            <span>04</span>
-            <h3>Customer Safety</h3>
-            <p>
-              Maintaining a professional and secure environment
-              for employees, visitors and customers.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
+</section>
 
 
       {/* THREE SERVICE VERTICALS */}
@@ -610,81 +786,127 @@ function Home() {
         </div>
 
       </section>
+      {/* PROFESSIONAL WORKFORCE */}
+<section className="workforce-home">
+
+  <div className="workforce-home-content">
+
+    <p className="section-tag">
+      OUR PROFESSIONAL WORKFORCE
+    </p>
+
+    <h2>
+      Disciplined People.
+      <br />
+      <span>Professional Service.</span>
+    </h2>
+
+    <p>
+      We provide ex-service, disciplined and uniformed staff
+      with professional supervision and systematic daily
+      reporting.
+    </p>
+
+    <p>
+      Our objective is to take care of the operational
+      responsibilities entrusted to us, allowing our clients
+      to focus on their core business.
+    </p>
+
+  </div>
 
 
-      {/* =========================================================
-          PROFESSIONAL WORKFORCE
-      ========================================================= */}
-      <section className="workforce-home">
+  <div className="workforce-points">
 
-        <div className="workforce-home-content">
+    {/* FEATURE 01 */}
+    <div className="workforce-feature">
 
-          <p className="section-tag">
-            OUR PROFESSIONAL WORKFORCE
-          </p>
+      <div className="workforce-feature-icon">
+        🛡️
+      </div>
 
-          <h2>
-            Disciplined People.
-            <br />
-            <span>Professional Service.</span>
-          </h2>
+      <strong>01</strong>
 
-          <p>
-            We provide ex-service, disciplined and uniformed staff
-            with professional supervision and systematic daily
-            reporting.
-          </p>
+      <h3>
+        Ex-Service Discipline
+      </h3>
 
-          <p>
-            Our objective is to take care of the operational
-            responsibilities entrusted to us, allowing our clients
-            to focus on their core business.
-          </p>
+      <p>
+        Professional discipline and responsible workplace
+        conduct.
+      </p>
 
-        </div>
+    </div>
 
 
-        <div className="workforce-points">
+    {/* FEATURE 02 */}
+    <div className="workforce-feature">
 
-          <div>
-            <strong>01</strong>
-            <h3>Ex-Service Discipline</h3>
-            <p>
-              Professional discipline and responsible workplace
-              conduct.
-            </p>
-          </div>
+      <div className="workforce-feature-icon">
+        ◉
+      </div>
 
-          <div>
-            <strong>02</strong>
-            <h3>24/7 Supervision</h3>
-            <p>
-              Continuous supervision to maintain service
-              standards.
-            </p>
-          </div>
+      <strong>02</strong>
 
-          <div>
-            <strong>03</strong>
-            <h3>Daily Reporting</h3>
-            <p>
-              Systematic reporting for better operational
-              visibility.
-            </p>
-          </div>
+      <h3>
+        24/7 Supervision
+      </h3>
 
-          <div>
-            <strong>04</strong>
-            <h3>Business Focus</h3>
-            <p>
-              We manage the service responsibilities so you can
-              focus on your business.
-            </p>
-          </div>
+      <p>
+        Continuous supervision to maintain service
+        standards.
+      </p>
 
-        </div>
+    </div>
 
-      </section>
+
+    {/* FEATURE 03 */}
+    <div className="workforce-feature">
+
+      <div className="workforce-feature-icon">
+        ✓
+      </div>
+
+      <strong>03</strong>
+
+      <h3>
+        Daily Reporting
+      </h3>
+
+      <p>
+        Systematic reporting for better operational
+        visibility.
+      </p>
+
+    </div>
+
+
+    {/* FEATURE 04 */}
+    <div className="workforce-feature">
+
+      <div className="workforce-feature-icon">
+        ◆
+      </div>
+
+      <strong>04</strong>
+
+      <h3>
+        Business Focus
+      </h3>
+
+      <p>
+        We manage the service responsibilities so you can
+        focus on your business.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+      
 
 
       {/* =========================================================
@@ -907,6 +1129,65 @@ function Home() {
         </div>
 
       </section>
+      {/* =========================================================
+    AUTOMATIC QUOTE POPUP
+========================================================= */}
+{autoQuoteOpen && (
+  <div
+    className="auto-quote-overlay"
+    onClick={() => setAutoQuoteOpen(false)}
+  >
+    <div
+      className="auto-quote-card"
+      onClick={(e) => e.stopPropagation()}
+    >
+
+      <button
+        type="button"
+        className="auto-quote-close"
+        onClick={() => setAutoQuoteOpen(false)}
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+      <div className="auto-quote-icon">
+        🛡️
+      </div>
+
+      <p className="section-tag">
+        BUDDHA SECURITY FACILITIES
+      </p>
+
+      <h2>
+        Need Professional
+        <br />
+        <span>Security Support?</span>
+      </h2>
+
+      <p>
+        Talk to our team about your security, housekeeping
+        or industrial manpower requirements.
+      </p>
+
+      <div className="auto-quote-actions">
+
+        <a href="tel:8096083322">
+          📞 Call Now
+        </a>
+
+        <Link
+          to="/contact"
+          onClick={() => setAutoQuoteOpen(false)}
+        >
+          Get a Quote →
+        </Link>
+
+      </div>
+
+    </div>
+  </div>
+)}
 
     </>
   );

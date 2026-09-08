@@ -78,10 +78,10 @@ function Footer() {
           </p>
 
           <a
-            href="tel:9908540044"
+            href="tel:8096083322"
             className="footer-phone"
           >
-            9908540044
+            8096083322
           </a>
 
           <p className="footer-contact-label">
