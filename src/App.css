@@ -20574,3 +20574,699 @@ body.page-founder .founder-experience-card:nth-child(5) {
   }
 
 }
+/* =========================================================
+   MOBILE RESPONSIVE FIXES
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border: 0;
+}
+
+
+/* =========================================================
+   HERO - MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    width: 100%;
+    min-height: 720px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-container {
+    width: 100%;
+    min-height: 720px;
+    padding: 70px 20px 70px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-slider-track {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+  }
+
+  .hero-slide {
+    width: 33.333333%;
+    min-width: 33.333333%;
+    min-height: 620px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    position: relative;
+    padding: 25px 5px 100px;
+  }
+
+
+  /* ---------- HERO CONTENT ---------- */
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 3;
+    text-align: left;
+  }
+
+  .hero-brand {
+    width: 100%;
+  }
+
+  .hero-brand h2 {
+    font-size: 15px;
+    line-height: 1.3;
+    margin: 0 0 5px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-brand span {
+    font-size: 11px;
+  }
+
+  .hero-line {
+    width: 45px;
+    height: 2px;
+    margin: 16px 0;
+  }
+
+  .hero-small {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-content h1 {
+    font-size: 39px;
+    line-height: 1.08;
+    letter-spacing: -1px;
+    margin: 16px 0;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 340px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+
+
+  /* ---------- HERO BUTTONS ---------- */
+
+  .hero-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    max-width: 250px;
+    min-height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+  }
+
+
+  /* =====================================================
+     IMPORTANT: HERO CARD STABLE FIX
+     ===================================================== */
+
+  .hero-card {
+    position: absolute !important;
+
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 65px !important;
+
+    width: auto !important;
+    max-width: none !important;
+
+    min-height: 105px;
+    height: 105px;
+
+    margin: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 55px 1fr;
+    grid-template-rows: auto auto;
+
+    align-items: center;
+
+    padding: 15px 18px !important;
+
+    z-index: 5;
+
+    transform: none !important;
+  }
+
+  .hero-card-icon {
+    grid-row: 1 / 3;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+  }
+
+  .hero-card strong {
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: left;
+    margin: 0;
+  }
+
+  .hero-card span {
+    font-size: 11px;
+    line-height: 1.3;
+    text-align: left;
+    margin-top: 3px;
+  }
+
+
+  /* ---------- ARROWS ---------- */
+
+  .hero-arrow {
+    width: 36px;
+    height: 36px;
+
+    z-index: 10;
+
+    font-size: 25px;
+  }
+
+  .hero-arrow-left {
+    left: 8px;
+  }
+
+  .hero-arrow-right {
+    right: 8px;
+  }
+
+
+  /* ---------- DOTS ---------- */
+
+  .hero-dots {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    z-index: 20;
+  }
+
+  .hero-dots span {
+    width: 7px;
+    height: 7px;
+    display: block;
+  }
+
+
+  /* =====================================================
+     TRUST BAR
+     ===================================================== */
+
+  .trust-bar {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+  }
+
+  .trust-bar > div {
+    min-height: 90px;
+    padding: 18px 10px;
+  }
+
+  .trust-bar strong {
+    font-size: 22px;
+  }
+
+  .trust-bar span {
+    font-size: 11px;
+  }
+
+
+  /* =====================================================
+     HOME ABOUT
+     ===================================================== */
+
+  .about-home {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .about-photo {
+    width: 100%;
+    min-height: 300px;
+    height: 300px;
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .experience-box {
+    left: 15px;
+    bottom: 15px;
+    padding: 12px 15px;
+  }
+
+  .about-home-content {
+    width: 100%;
+    padding: 45px 20px !important;
+    text-align: left;
+  }
+
+  .about-home-content h2 {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .about-home-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  /* =====================================================
+     SECURITY SHOWCASE
+     ===================================================== */
+
+  .security-showcase {
+    width: 100%;
+    padding: 55px 20px !important;
+  }
+
+  .security-showcase-heading {
+    text-align: left;
+  }
+
+  .security-showcase-heading h2 {
+    font-size: 34px;
+    line-height: 1.1;
+  }
+
+  .security-image-grid {
+    display: flex !important;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .security-image-card,
+  .security-image-card.featured {
+    width: 100%;
+    height: 330px;
+    min-height: 330px;
+  }
+
+  .security-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .security-image-overlay {
+    padding: 20px;
+  }
+
+
+  /* =====================================================
+     SERVICE VERTICALS - HOME
+     ===================================================== */
+
+  .home-verticals {
+    width: 100%;
+    padding: 55px 20px !important;
+  }
+
+  .home-verticals-heading {
+    text-align: left;
+  }
+
+  .home-verticals-heading h2 {
+    font-size: 34px;
+  }
+
+  .vertical-service-card {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+
+  .vertical-service-image {
+    width: 100%;
+    height: 260px;
+    min-height: 260px;
+  }
+
+  .vertical-service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .vertical-service-content {
+    width: 100%;
+    padding: 30px 22px !important;
+    text-align: left;
+  }
+
+  .vertical-service-content h3 {
+    font-size: 27px;
+  }
+
+  .vertical-service-content p,
+  .vertical-service-content li {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+
+  /* =====================================================
+     ELECTRONIC SECURITY
+     ===================================================== */
+
+  .electronic-home {
+    width: 100%;
+    padding: 55px 20px !important;
+  }
+
+  .electronic-home-content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .electronic-home-content h2 {
+    font-size: 34px;
+  }
+
+
+  /* =====================================================
+     INDUSTRIES
+     ===================================================== */
+
+  .industries {
+    width: 100%;
+    padding: 55px 20px !important;
+  }
+
+  .industries-heading {
+    text-align: left;
+  }
+
+  .industry-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+  }
+
+  .industry-grid > div {
+    min-height: 100px;
+    padding: 15px 8px;
+    font-size: 12px;
+  }
+
+
+  /* =====================================================
+     WORKFORCE
+     ===================================================== */
+
+  .workforce-home {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    padding: 55px 20px !important;
+  }
+
+  .workforce-home-content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .workforce-home-content h2 {
+    font-size: 34px;
+  }
+
+  .workforce-points {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .workforce-feature {
+    padding: 20px 15px;
+  }
+
+
+  /* =====================================================
+     FOUNDER
+     ===================================================== */
+
+  .founder-home {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    padding: 50px 20px !important;
+  }
+
+  .founder-home-content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .founder-home-content h2 {
+    font-size: 30px;
+  }
+
+  .founder-home-contact {
+    width: 100%;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+
+  /* =====================================================
+     WHY CHOOSE US
+     ===================================================== */
+
+  .why-home {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .why-image {
+    width: 100%;
+    height: 280px;
+  }
+
+  .why-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .why-content {
+    width: 100%;
+    padding: 45px 20px !important;
+    text-align: left;
+  }
+
+  .why-content h2 {
+    font-size: 32px;
+  }
+
+
+  /* =====================================================
+     FINAL CTA
+     ===================================================== */
+
+  .final-cta {
+    width: 100%;
+    padding: 50px 20px !important;
+    display: flex !important;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .cta-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .cta-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  /* =====================================================
+     AUTOMATIC QUOTE POPUP
+     ===================================================== */
+
+  .auto-quote-overlay {
+    padding: 18px;
+  }
+
+  .auto-quote-card {
+    width: 100%;
+    max-width: 390px;
+    padding: 30px 22px;
+  }
+
+  .auto-quote-card h2 {
+    font-size: 28px;
+  }
+
+  .auto-quote-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auto-quote-actions a {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .hero {
+    min-height: 700px;
+  }
+
+  .hero-container {
+    min-height: 700px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-slide {
+    min-height: 610px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 13px;
+  }
+
+  .hero-card {
+    left: 15px !important;
+    right: 15px !important;
+    bottom: 60px !important;
+  }
+
+  .hero-card strong {
+    font-size: 12px;
+  }
+
+  .hero-card span {
+    font-size: 10px;
+  }
+
+  .workforce-points {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+
+/* =========================================================
+   PREVENT TEXT / CARD JUMPING
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero-card,
+  .hero-card *,
+  .service-vertical-card,
+  .service-vertical-content,
+  .about-vertical-card {
+    transform: none !important;
+  }
+
+  .hero-card strong,
+  .hero-card span {
+    position: static !important;
+  }
+
+  .hero-slide {
+    overflow: hidden;
+  }
+
+  .hero-content,
+  .hero-card {
+    flex-shrink: 0;
+  }
+
+}
