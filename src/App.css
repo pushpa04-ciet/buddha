@@ -21581,3 +21581,93 @@ body {
     transform: translateY(-25px) !important;
   }
 }
+/* =========================
+   FINAL MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  /* ---------- HOME PAGE CARD ---------- */
+
+  .hero-card {
+    transform: translateY(-25px) !important;
+  }
+
+  .hero-card * {
+    transform: none !important;
+  }
+
+
+  /* ---------- SECURITY PAGE ---------- */
+
+  .security-service-card {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+
+    width: 100% !important;
+    min-height: 190px !important;
+    height: auto !important;
+
+    margin: 0 !important;
+
+    overflow: hidden !important;
+
+    transition: none !important;
+  }
+
+  .security-service-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .security-service-card * {
+    transform: none !important;
+  }
+
+
+  /* ---------- SECURITY SERVICES SECTION ---------- */
+
+  .security-services {
+    padding: 55px 20px !important;
+  }
+
+  .security-services .section-title {
+    margin-bottom: 30px !important;
+  }
+
+
+  /* ---------- PHILOSOPHY → SERVICES GAP ---------- */
+
+  .security-approach {
+    margin-bottom: 0 !important;
+    padding-bottom: 40px !important;
+  }
+
+  .security-services {
+    margin-top: 0 !important;
+  }
+
+
+  /* ---------- SECURITY CARD TEXT ---------- */
+
+  .security-service-card {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+
+  .security-service-card span {
+    margin-top: 0 !important;
+  }
+
+  .security-service-card h3 {
+    margin-top: 10px !important;
+  }
+
+  .security-service-card p {
+    margin-bottom: 0 !important;
+  }
+}
