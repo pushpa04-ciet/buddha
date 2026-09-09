@@ -23957,3 +23957,57 @@ body.page-about .about-intro {
 .industries-intro h2 br {
   display: none !important;
 }
+/* =========================================
+   MOBILE ONLY - HOME HERO CARD FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* Hero card content correct position */
+  .hero-card-overlay {
+    left: 18px !important;
+    right: 18px !important;
+    bottom: 20px !important;
+    transform: none !important;
+  }
+
+  .hero-card-overlay strong {
+    display: block !important;
+    font-size: 18px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .hero-card-overlay span {
+    display: block !important;
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+  }
+
+
+  /* =========================================
+     MOBILE - DON'T FORCE HEADINGS INTO 1 LINE
+     ========================================= */
+
+  .security-showcase-heading h2,
+  .home-verticals-heading h2,
+  .electronic-home h2,
+  .workforce-home-content h2 {
+    white-space: normal !important;
+  }
+
+  .security-showcase-heading h2 br,
+  .home-verticals-heading h2 br,
+  .electronic-home h2 br,
+  .workforce-home-content h2 br {
+    display: block !important;
+  }
+
+  .security-showcase-heading h2 span,
+  .home-verticals-heading h2 span,
+  .electronic-home h2 span,
+  .workforce-home-content h2 span {
+    margin-left: 0 !important;
+  }
+
+}
