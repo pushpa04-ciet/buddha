@@ -24011,3 +24011,99 @@ body.page-about .about-intro {
   }
 
 }
+/* MOBILE - HERO CARD TEXT POSITION */
+@media (max-width: 768px) {
+  .hero-card-overlay {
+    left: 18px !important;
+    right: 18px !important;
+    bottom: 38px !important;
+    transform: none !important;
+  }
+
+  .hero-card-overlay strong {
+    font-size: 18px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .hero-card-overlay span {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+  }
+}
+/* =========================================
+   ABOUT PAGE - MOBILE CARD FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* About photo/card proper position */
+  .about-photo {
+    position: relative !important;
+    margin-top: 30px !important;
+    margin-bottom: 35px !important;
+  }
+
+  /* Experience card stay inside photo area */
+  .about-photo .experience-box {
+    position: absolute !important;
+    bottom: 15px !important;
+    left: 15px !important;
+    right: 15px !important;
+    z-index: 5 !important;
+  }
+
+  /* Keep following text below the card */
+  .about-content {
+    position: relative !important;
+    z-index: 2 !important;
+    margin-top: 35px !important;
+  }
+
+  /* Prevent overlap */
+  .about-section {
+    gap: 30px !important;
+  }
+
+}
+/* =========================================
+   MOBILE - RESTORE HEADING LINE BREAKS
+   INDUSTRIES + SECURITY PARTNER
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* INDUSTRIES */
+  .industries-intro h2,
+  .industries-section .section-title h2 {
+    white-space: normal !important;
+  }
+
+  .industries-intro h2 br,
+  .industries-section .section-title h2 br {
+    display: block !important;
+  }
+
+  .industries-intro h2 span,
+  .industries-section .section-title h2 span {
+    margin-left: 0 !important;
+  }
+
+
+  /* SECURITY PARTNER */
+  .security-partner-intro-content h2,
+  .security-partner-heading h2 {
+    white-space: normal !important;
+  }
+
+  .security-partner-intro-content h2 br,
+  .security-partner-heading h2 br {
+    display: block !important;
+  }
+
+  .security-partner-intro-content h2 span,
+  .security-partner-heading h2 span {
+    margin-left: 0 !important;
+  }
+
+}
