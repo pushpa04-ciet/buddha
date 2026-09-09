@@ -24107,3 +24107,168 @@ body.page-about .about-intro {
   }
 
 }
+/* =========================================
+   HOME PAGE - MOBILE HERO CARD TEXT FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .hero-card {
+    position: relative !important;
+    min-height: 260px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-card-overlay {
+    position: absolute !important;
+
+    left: 16px !important;
+    right: 16px !important;
+
+    /* text ni bottom nundi paiki teesukostundi */
+    bottom: 45px !important;
+
+    top: auto !important;
+    margin: 0 !important;
+
+    transform: none !important;
+
+    z-index: 20 !important;
+  }
+
+  .hero-card-overlay strong {
+    display: block !important;
+    margin: 0 0 7px 0 !important;
+
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+
+    color: #fff !important;
+  }
+
+  .hero-card-overlay span {
+    display: block !important;
+    margin: 0 !important;
+
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+
+    color: #fff !important;
+  }
+
+  .hero-card-icon {
+    display: block !important;
+    margin-bottom: 8px !important;
+  }
+
+}
+/* =========================================
+   ABOUT US - MOBILE FIRST CARD FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* About section layout */
+  .about-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+    position: relative !important;
+  }
+
+  /* First card / image */
+  .about-photo {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 320px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .about-photo img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 320px !important;
+    object-fit: cover !important;
+  }
+
+  /* Experience card */
+  .about-photo .experience-box {
+    position: absolute !important;
+    left: 15px !important;
+    right: 15px !important;
+    bottom: 15px !important;
+    z-index: 10 !important;
+    margin: 0 !important;
+  }
+
+  /* Text below the card */
+  .about-content {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    z-index: 2 !important;
+  }
+
+  .about-content p {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+}
+/* About Us - heading same colour */
+.about-hero-content h1,
+.about-hero-content h1 span {
+  color: inherit !important;
+}
+/* About Us - Complete Facility Solutions */
+.about-verticals-heading h2 {
+  white-space: nowrap !important;
+}
+
+.about-verticals-heading h2 br {
+  display: none !important;
+}
+
+.about-verticals-heading h2,
+.about-verticals-heading h2 span {
+  color: inherit !important;
+}
+
+.about-verticals-heading h2 span {
+  margin-left: 8px !important;
+}
+/* ABOUT US - Complete Facility Solutions */
+.about-verticals .section-heading {
+  text-align: center !important;
+}
+
+.about-verticals .section-heading h2 {
+  white-space: nowrap !important;
+  color: inherit !important;
+  text-align: center !important;
+}
+
+.about-verticals .section-heading h2 br {
+  display: none !important;
+}
+
+.about-verticals .section-heading h2 span {
+  color: inherit !important;
+  margin-left: 8px !important;
+}
+/* ABOUT US - Keep heading colours same */
+
+.about-intro-content h2,
+.about-intro-content h2 span {
+  color: inherit !important;
+}
+
+.about-approach .section-heading h2,
+.about-approach .section-heading h2 span {
+  color: inherit !important;
+}
