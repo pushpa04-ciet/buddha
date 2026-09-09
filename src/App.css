@@ -24272,3 +24272,41 @@ body.page-about .about-intro {
 .about-approach .section-heading h2 span {
   color: inherit !important;
 }
+/* =========================================
+   HOME HERO CARD - MOBILE SIZE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .hero-card {
+    min-height: 200px !important;
+    height: 200px !important;
+    border-radius: 12px !important;
+  }
+
+  .hero-card img {
+    height: 200px !important;
+    object-fit: cover !important;
+  }
+
+  .hero-card-overlay {
+    left: 15px !important;
+    right: 15px !important;
+    bottom: 25px !important;
+  }
+
+  .hero-card-overlay strong {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-card-overlay span {
+    font-size: 10px !important;
+  }
+
+  .hero-card-icon {
+    font-size: 25px !important;
+    margin-bottom: 5px !important;
+  }
+
+}
