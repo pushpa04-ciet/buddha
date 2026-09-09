@@ -378,10 +378,14 @@ function App() {
         <span>PROVIDE A QUOTE AND TIMELINES</span>
       </h2>
       <div className="quote-image">
-  <img
-    src="/security-quote.jpg"
-    alt="Professional Security Services"
-  />
+  <div className="security-scan"></div>
+
+  <div className="security-pattern">
+    <span>◈</span>
+    <span>SECURITY</span>
+    <span>24/7</span>
+  </div>
+
   <div className="quote-image-overlay">
     <h3>Professional Security</h3>
     <p>Trusted Protection • 24/7</p>

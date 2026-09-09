@@ -21671,3 +21671,956 @@ body {
     margin-bottom: 0 !important;
   }
 }
+/* ================================
+   GET A QUOTE POPUP
+================================ */
+
+.quote-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(3, 15, 30, 0.72);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+  z-index: 99999;
+}
+
+.quote-popup {
+  position: relative;
+
+  width: 430px;
+  max-width: 100%;
+  max-height: 85vh;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+  border-radius: 16px;
+
+  padding: 0 24px 22px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+  animation: quotePopupIn 0.25s ease;
+}
+
+@keyframes quotePopupIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* ================================
+   SECURITY IMAGE
+================================ */
+
+.quote-image {
+  position: relative;
+
+  width: calc(100% + 48px);
+  height: 115px;
+
+  margin-left: -24px;
+  margin-bottom: 20px;
+
+  overflow: hidden;
+
+  border-radius: 15px 15px 0 0;
+
+  background: #071d36;
+}
+
+.quote-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.quote-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(7, 29, 54, 0.78),
+    rgba(7, 29, 54, 0.15)
+  );
+}
+
+
+/* Image text */
+
+.quote-image-overlay {
+  position: absolute;
+
+  left: 22px;
+  bottom: 18px;
+
+  z-index: 2;
+
+  color: white;
+}
+
+.quote-image-overlay p {
+  margin: 0 0 4px;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.quote-image-overlay h3 {
+  margin: 0 0 3px;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.quote-image-overlay span {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+
+/* ================================
+   CLOSE BUTTON
+================================ */
+
+.quote-close {
+  position: absolute;
+
+  top: 10px;
+  right: 12px;
+
+  z-index: 10;
+
+  width: 31px;
+  height: 31px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+  color: #071d36;
+
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+
+  transition: 0.2s ease;
+}
+
+.quote-close:hover {
+  background: #071d36;
+  color: white;
+
+  transform: rotate(90deg);
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.quote-popup .section-tag {
+  color: #1d5fa7;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin: 0 35px 8px 0;
+}
+
+.quote-popup h2 {
+  margin: 0 25px 15px 0;
+
+  color: #071d36;
+
+  font-size: 19px;
+  line-height: 1.25;
+
+  font-weight: 800;
+}
+
+.quote-popup h2 span {
+  color: #1d5fa7;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.quote-popup form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.quote-popup input,
+.quote-popup select,
+.quote-popup textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 9px 12px;
+
+  border: 1px solid #d8e0e8;
+  border-radius: 7px;
+
+  background: #f8fafc;
+
+  color: #071d36;
+
+  font-family: inherit;
+  font-size: 12px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+.quote-popup input:focus,
+.quote-popup select:focus,
+.quote-popup textarea:focus {
+  border-color: #1d5fa7;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(29, 95, 167, 0.08);
+}
+
+.quote-popup textarea {
+  resize: vertical;
+
+  min-height: 60px;
+}
+
+
+/* ================================
+   REQUEST BUTTON
+================================ */
+
+.quote-submit {
+  width: 100%;
+
+  margin-top: 2px;
+
+  padding: 11px 15px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #071d36;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.quote-submit:hover {
+  background: #1d5fa7;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 18px rgba(29, 95, 167, 0.25);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .quote-overlay {
+    padding: 12px;
+  }
+
+  .quote-popup {
+    width: 100%;
+    max-width: 370px;
+
+    max-height: 90vh;
+
+    padding: 0 20px 20px;
+
+    border-radius: 14px;
+  }
+
+  .quote-image {
+    width: calc(100% + 40px);
+    height: 125px;
+
+    margin-left: -20px;
+    margin-bottom: 20px;
+
+    border-radius: 14px 14px 0 0;
+  }
+
+  .quote-image-overlay {
+    left: 18px;
+    bottom: 15px;
+  }
+
+  .quote-image-overlay h3 {
+    font-size: 17px;
+  }
+
+  .quote-image-overlay span {
+    font-size: 10px;
+  }
+
+  .quote-popup h2 {
+    font-size: 18px;
+    line-height: 1.3;
+
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+
+  .quote-popup .section-tag {
+    font-size: 9px;
+  }
+
+  .quote-popup input,
+  .quote-popup select,
+  .quote-popup textarea {
+    padding: 10px 11px;
+    font-size: 12px;
+  }
+
+  .quote-popup textarea {
+    min-height: 60px;
+  }
+
+  .quote-submit {
+    padding: 12px;
+    font-size: 11px;
+  }
+}
+.quote-image {
+  position: relative;
+  width: calc(100% + 48px);
+  height: 115px;
+  margin-left: -24px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+
+  background:
+    radial-gradient(
+      circle at 75% 40%,
+      rgba(29, 95, 167, 0.8),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #061629,
+      #0b2d50,
+      #071d36
+    );
+}
+
+/* Security pattern */
+.security-pattern {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  color: rgba(255, 255, 255, 0.12);
+
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  animation: securityFloat 4s ease-in-out infinite;
+}
+
+.security-pattern span:first-child {
+  font-size: 38px;
+  color: rgba(255, 255, 255, 0.18);
+
+  animation: securityRotate 5s linear infinite;
+}
+
+/* Moving security scan */
+.security-scan {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.18),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  animation: securityScan 3.5s ease-in-out infinite;
+}
+
+/* Dark overlay */
+.quote-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(3, 15, 30, 0.85),
+    rgba(7, 29, 54, 0.35)
+  );
+
+  pointer-events: none;
+}
+
+/* Text */
+.quote-image-overlay {
+  position: absolute;
+  left: 18px;
+  bottom: 13px;
+
+  z-index: 3;
+  color: white;
+}
+
+.quote-image-overlay h3 {
+  margin: 0 0 3px;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.quote-image-overlay p {
+  margin: 0;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+/* New animation 1 */
+@keyframes securityScan {
+  0% {
+    left: -35%;
+  }
+
+  50% {
+    left: 105%;
+  }
+
+  100% {
+    left: 105%;
+  }
+}
+
+/* New animation 2 */
+@keyframes securityFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* New animation 3 */
+@keyframes securityRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .quote-image {
+    width: calc(100% + 36px);
+    height: 100px;
+    margin-left: -18px;
+    border-radius: 14px 14px 0 0;
+  }
+
+  .security-pattern {
+    font-size: 18px;
+  }
+
+  .security-pattern span:first-child {
+    font-size: 30px;
+  }
+
+  .quote-image-overlay {
+    left: 14px;
+    bottom: 10px;
+  }
+
+  .quote-image-overlay h3 {
+    font-size: 14px;
+  }
+
+  .quote-image-overlay p {
+    font-size: 9px;
+  }
+}
+/* =========================================
+   PREMIUM NAVBAR - GET A QUOTE BUTTON
+   ========================================= */
+
+.quote-btn {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 125px;
+  padding: 10px 18px;
+
+  background: #071d36;
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  box-shadow: 0 5px 16px rgba(7, 29, 54, 0.22);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Small blue accent line */
+.quote-btn::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #2f80c9;
+
+  transition: width 0.35s ease;
+}
+
+/* Shine */
+.quote-btn::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.18),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: left 0.6s ease;
+}
+
+.quote-btn:hover {
+  background: #123b62;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 22px rgba(7, 29, 54, 0.3);
+}
+
+.quote-btn:hover::before {
+  left: 130%;
+}
+
+.quote-btn:hover::after {
+  width: 100%;
+}
+
+.quote-btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .quote-btn {
+    min-width: 105px;
+    padding: 9px 13px;
+
+    font-size: 10px;
+    letter-spacing: 0.7px;
+
+    border-radius: 5px;
+  }
+}
+.quote-btn {
+  color: #ffffff !important;
+}
+
+.quote-btn:hover {
+  color: #ffffff !important;
+}
+/* ==========================================
+   HOME PAGE - ALL HEADINGS ONE LINE
+   ========================================== */
+
+body.page-home h1,
+body.page-home h2,
+body.page-home h3 {
+  white-space: nowrap !important;
+}
+
+/* Remove manual <br> line breaks inside Home headings */
+body.page-home h1 br,
+body.page-home h2 br,
+body.page-home h3 br {
+  display: none !important;
+}
+/* ==========================================
+   HOME PAGE - ALL HEADINGS ONE LINE
+   ========================================== */
+
+body.page-home h1,
+body.page-home h2,
+body.page-home h3 {
+  white-space: nowrap !important;
+}
+
+body.page-home h1 br,
+body.page-home h2 br,
+body.page-home h3 br {
+  display: none !important;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  body.page-home h1,
+  body.page-home h2,
+  body.page-home h3 {
+    white-space: normal !important;
+  }
+
+  body.page-home h1 br,
+  body.page-home h2 br,
+  body.page-home h3 br {
+    display: none !important;
+  }
+}
+/* =========================================================
+   HOME PAGE - KEEP HEADINGS IN ONE LINE
+   ========================================================= */
+
+/* Main section headings */
+.about-home h2,
+.security-showcase-heading h2,
+.home-verticals-heading h2,
+.electronic-home h2,
+.industries-heading h2,
+.workforce-home-content h2 {
+  white-space: nowrap !important;
+  line-height: 1.15 !important;
+}
+
+/* Remove forced line breaks inside Home headings */
+.about-home h2 br,
+.security-showcase-heading h2 br,
+.home-verticals-heading h2 br,
+.electronic-home h2 br,
+.industries-heading h2 br,
+.workforce-home-content h2 br {
+  display: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .about-home h2,
+  .security-showcase-heading h2,
+  .home-verticals-heading h2,
+  .electronic-home h2,
+  .industries-heading h2,
+  .workforce-home-content h2 {
+    white-space: normal !important;
+    font-size: 28px !important;
+  }
+
+  .about-home h2 br,
+  .security-showcase-heading h2 br,
+  .home-verticals-heading h2 br,
+  .electronic-home h2 br,
+  .industries-heading h2 br,
+  .workforce-home-content h2 br {
+    display: none !important;
+  }
+
+}
+/* nee existing CSS */
+
+
+
+/* =========================================================
+   HOME PAGE - KEEP HEADINGS IN ONE LINE
+   ========================================================= */
+
+.about-home h2,
+.security-showcase-heading h2,
+.home-verticals-heading h2,
+.electronic-home h2,
+.industries-heading h2,
+.workforce-home-content h2 {
+  white-space: nowrap !important;
+  line-height: 1.15 !important;
+}
+
+.about-home h2 br,
+.security-showcase-heading h2 br,
+.home-verticals-heading h2 br,
+.electronic-home h2 br,
+.industries-heading h2 br,
+.workforce-home-content h2 br {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .about-home h2,
+  .security-showcase-heading h2,
+  .home-verticals-heading h2,
+  .electronic-home h2,
+  .industries-heading h2,
+  .workforce-home-content h2 {
+    white-space: normal !important;
+    font-size: 28px !important;
+  }
+
+  .about-home h2 br,
+  .security-showcase-heading h2 br,
+  .home-verticals-heading h2 br,
+  .electronic-home h2 br,
+  .industries-heading h2 br,
+  .workforce-home-content h2 br {
+    display: none !important;
+  }
+}
+/* =========================================================
+   HOME HEADINGS - 2 LINE STYLE
+   ========================================================= */
+
+.about-home h2,
+.security-showcase-heading h2,
+.home-verticals-heading h2,
+.electronic-home h2,
+.industries-heading h2,
+.workforce-home-content h2 {
+  white-space: normal !important;
+  line-height: 1.15 !important;
+  margin-top: 18px !important;
+}
+
+/* Keep the heading break visible */
+.about-home h2 br,
+.security-showcase-heading h2 br,
+.home-verticals-heading h2 br,
+.electronic-home h2 br,
+.industries-heading h2 br,
+.workforce-home-content h2 br {
+  display: block !important;
+}
+/* HOME PAGE - SELECTED HEADINGS ONE LINE */
+
+.security-showcase-heading h2,
+.home-verticals-heading h2,
+.electronic-home h2,
+.workforce-home-content h2 {
+  white-space: nowrap !important;
+}
+
+/* Remove the <br> that is creating the second line */
+.security-showcase-heading h2 br,
+.home-verticals-heading h2 br,
+.electronic-home h2 br,
+.workforce-home-content h2 br {
+  display: none !important;
+}
+/* =========================================================
+   HOME HEADINGS - ONE LINE WITH PROPER WORD SPACING
+   ========================================================= */
+
+.security-showcase-heading h2,
+.home-verticals-heading h2,
+.electronic-home h2,
+.workforce-home-content h2 {
+  white-space: nowrap !important;
+}
+
+/* Hide line break but preserve the space after it */
+.security-showcase-heading h2 br,
+.home-verticals-heading h2 br,
+.electronic-home h2 br,
+.workforce-home-content h2 br {
+  display: none !important;
+}
+
+/* Space between text and span */
+.security-showcase-heading h2 span,
+.home-verticals-heading h2 span,
+.electronic-home h2 span,
+.workforce-home-content h2 span {
+  margin-left: 8px !important;
+}
+/* =========================================================
+   HOME HEADINGS - SAME COLOR
+   ========================================================= */
+
+.security-showcase-heading h2,
+.security-showcase-heading h2 span,
+.home-verticals-heading h2,
+.home-verticals-heading h2 span,
+.electronic-home h2,
+.electronic-home h2 span,
+.workforce-home-content h2,
+.workforce-home-content h2 span {
+  color: inherit !important;
+}
+/* =========================================================
+   HOME PAGE - GET IN TOUCH VISIBILITY
+   ========================================================= */
+
+.home-cta a,
+.final-cta a {
+  color: #ffffff !important;
+  background: #071d36 !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  padding: 12px 22px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  display: inline-block !important;
+  position: relative;
+  z-index: 5;
+}
+
+.home-cta a:hover,
+.final-cta a:hover {
+  color: #ffffff !important;
+  background: #123b62 !important;
+}
+/* ABOUT PAGE - CENTER HERO CONTENT */
+
+.about-hero .inner-hero-content {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+/* ABOUT HERO - EXACT VERTICAL CENTER */
+
+.about-hero {
+  position: relative !important;
+}
+
+.about-hero-content {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+}
+/* =========================================================
+   HERO BRAND - PREVENT AND PROTECT
+   ========================================================= */
+
+.hero-brand {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.hero-brand h2 {
+  margin: 0 !important;
+}
+
+.hero-brand span {
+  display: block !important;
+  width: max-content !important;
+  margin-left: auto !important;
+  margin-top: 5px !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.5px !important;
+  line-height: 1.2 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  text-transform: none !important;
+}

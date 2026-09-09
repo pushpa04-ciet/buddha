@@ -15,7 +15,7 @@ function Home() {
   useEffect(() => {
   const timer = setInterval(() => {
     nextSlide();
-  }, 90000);
+  }, 6000);
 
   return () => clearInterval(timer);
 }, []);
@@ -337,6 +337,7 @@ useEffect(() => {
 
           <h2>
             More Than a Service.
+            <br />
             <span> A Trusted Partner.</span>
           </h2>
 
