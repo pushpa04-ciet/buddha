@@ -315,16 +315,16 @@ useEffect(() => {
           />
 
           <div className="experience-box">
+  <strong>
+    Prevent
+  </strong>
 
-            <strong>
-              Prevent
-            </strong>
-
-            <span>
-              and Protect
-            </span>
-
-          </div>
+  <span>
+    and
+    <br />
+    Protect
+  </span>
+</div>
 
         </div>
 

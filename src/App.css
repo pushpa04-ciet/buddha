@@ -22624,3 +22624,1336 @@ body.page-home h3 br {
   color: rgba(255, 255, 255, 0.85) !important;
   text-transform: none !important;
 }
+/* ABOUT IMAGE - PREVENT & PROTECT CARD ONLY */
+
+.about-photo .about-photo-overlay {
+  padding: 18px 22px !important;
+  max-width: 260px !important;
+  width: fit-content !important;
+  min-height: auto !important;
+}
+
+.about-photo .about-photo-overlay h3 {
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
+
+.about-photo .about-photo-overlay p {
+  font-size: 10px !important;
+  margin: 5px 0 0 !important;
+}
+/* =========================================
+   ABOUT IMAGE - EXPERIENCE CARD SMALLER
+   IMAGE SIZE WILL NOT CHANGE
+========================================= */
+
+.about-photo .experience-box {
+  padding: 12px 18px !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 150px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: 8px !important;
+}
+
+.about-photo .experience-box strong {
+  font-size: 20px !important;
+  line-height: 1.1 !important;
+  display: block !important;
+}
+
+.about-photo .experience-box span {
+  font-size: 11px !important;
+  line-height: 1.2 !important;
+  display: block !important;
+}
+.about-photo .experience-box {
+  padding: 16px 24px !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 190px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: 9px !important;
+}
+
+.about-photo .experience-box strong {
+  font-size: 24px !important;
+  line-height: 1.15 !important;
+  display: block !important;
+}
+
+.about-photo .experience-box span {
+  font-size: 13px !important;
+  line-height: 1.3 !important;
+  display: block !important;
+}
+/* EXPERIENCE CARD - SAME TEXT SIZE */
+
+.about-photo .experience-box strong,
+.about-photo .experience-box span {
+  display: block !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+.about-photo .experience-box {
+  text-align: center !important;
+}
+
+.about-photo .experience-box strong,
+.about-photo .experience-box span {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+}
+
+.about-photo .experience-box span {
+  display: block !important;
+  margin-top: 2px !important;
+}
+/* =========================================================
+   SMART SECURITY TECHNOLOGY
+   NEW ANIMATED FEATURE
+========================================================= */
+
+.electronic-home {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Animated background grid */
+.electronic-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      rgba(29, 95, 167, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(29, 95, 167, 0.06) 1px,
+      transparent 1px
+    );
+  background-size: 42px 42px;
+  animation: smartGridMove 12s linear infinite;
+  pointer-events: none;
+}
+
+.electronic-home-content {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+
+/* =========================================================
+   SMART SECURITY TECHNOLOGY LABEL
+========================================================= */
+
+.electronic-home .section-tag {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+
+  padding: 8px 14px !important;
+
+  border-left: 3px solid #1d5fa7 !important;
+
+  background: rgba(29, 95, 167, 0.08) !important;
+
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+
+  animation: smartLabel 3s ease-in-out infinite !important;
+}
+
+/* Live indicator */
+.electronic-home .section-tag::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #1d5fa7;
+  box-shadow: 0 0 0 0 rgba(29, 95, 167, 0.5);
+  animation: smartPulse 2s infinite;
+}
+
+/* Animated line */
+.electronic-home .section-tag::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 30%;
+  height: 2px;
+  background: #1d5fa7;
+  animation: smartLine 2.5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.electronic-home h2 {
+  position: relative !important;
+  animation: smartHeading 0.9s ease-out both !important;
+}
+
+
+/* =========================================================
+   SECURITY FEATURES
+========================================================= */
+
+.electronic-home .check-list {
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.electronic-home .check-list > div {
+  position: relative !important;
+
+  padding: 12px 16px 12px 40px !important;
+  margin-bottom: 9px !important;
+
+  border: 1px solid rgba(29, 95, 167, 0.12) !important;
+  border-radius: 7px !important;
+
+  background: rgba(255, 255, 255, 0.65) !important;
+
+  overflow: hidden !important;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+/* Security status dot */
+.electronic-home .check-list > div::before {
+  content: "●";
+
+  position: absolute;
+  left: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #1d5fa7;
+  font-size: 9px;
+
+  animation: featurePulse 1.8s ease-in-out infinite;
+}
+
+/* Scanning light inside each feature */
+.electronic-home .check-list > div::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  width: 55%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(29, 95, 167, 0.09),
+    transparent
+  );
+
+  animation: featureScan 4s ease-in-out infinite;
+}
+
+
+/* Different timing for each feature */
+
+.electronic-home .check-list > div:nth-child(1) {
+  animation: featureAppear 0.6s ease-out 0.1s both;
+}
+
+.electronic-home .check-list > div:nth-child(2) {
+  animation: featureAppear 0.6s ease-out 0.25s both;
+}
+
+.electronic-home .check-list > div:nth-child(3) {
+  animation: featureAppear 0.6s ease-out 0.4s both;
+}
+
+.electronic-home .check-list > div:nth-child(4) {
+  animation: featureAppear 0.6s ease-out 0.55s both;
+}
+
+.electronic-home .check-list > div:nth-child(5) {
+  animation: featureAppear 0.6s ease-out 0.7s both;
+}
+
+.electronic-home .check-list > div:nth-child(6) {
+  animation: featureAppear 0.6s ease-out 0.85s both;
+}
+
+
+/* Hover */
+
+.electronic-home .check-list > div:hover {
+  transform: translateX(7px) !important;
+
+  border-color: rgba(29, 95, 167, 0.4) !important;
+
+  background: #ffffff !important;
+
+  box-shadow:
+    0 8px 24px rgba(7, 29, 54, 0.12) !important;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes smartGridMove {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 42px 42px;
+  }
+}
+
+@keyframes smartSecurityScan {
+  0% {
+    top: -5%;
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 105%;
+    opacity: 0;
+  }
+}
+
+@keyframes smartLabel {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes smartPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 95, 167, 0.45);
+  }
+
+  70% {
+    box-shadow: 0 0 0 7px rgba(29, 95, 167, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 95, 167, 0);
+  }
+}
+
+@keyframes smartLine {
+  0%,
+  100% {
+    width: 25%;
+  }
+
+  50% {
+    width: 90%;
+  }
+}
+
+@keyframes smartHeading {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes featureAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes featurePulse {
+  0%,
+  100% {
+    transform: translateY(-50%) scale(1);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: translateY(-50%) scale(1.5);
+    opacity: 1;
+  }
+}
+
+@keyframes featureScan {
+  0% {
+    left: -100%;
+  }
+
+  45% {
+    left: 120%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .electronic-home .section-tag {
+    font-size: 9px !important;
+    letter-spacing: 1.4px !important;
+    padding: 7px 11px !important;
+  }
+
+  .electronic-home .check-list > div {
+    padding: 10px 12px 10px 35px !important;
+    font-size: 13px !important;
+  }
+
+}
+/* About page card description - single line */
+.about-hero-content > p:last-child {
+  white-space: nowrap !important;
+  width: max-content !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Security Partner hero text - single line */
+.security-partner-hero-text {
+  white-space: nowrap !important;
+  width: max-content !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Your Business Deserves More Than Guarding - single line */
+.security-partner-intro-content h2 {
+  white-space: nowrap !important;
+}
+
+.security-partner-intro-content h2 br {
+  display: none !important;
+}
+
+.security-partner-intro-content h2 span {
+  margin-left: 8px !important;
+  color: inherit !important;
+}
+/* Four Areas That Strengthen Your Security - single line */
+.security-partner-heading h2 {
+  white-space: nowrap !important;
+}
+
+.security-partner-heading h2 br {
+  display: none !important;
+}
+
+.security-partner-heading h2 span {
+  margin-left: 8px !important;
+  color: inherit !important;
+}
+/* Security Partner headings - same colour */
+.security-partner-approach-left h2,
+.security-partner-approach-left h2 span,
+.security-partner-final h2,
+.security-partner-final h2 span {
+  color: inherit !important;
+}
+/* Services page - Complete Workplace Solutions */
+.services-vertical-heading h2 {
+  white-space: nowrap !important;
+}
+
+.services-vertical-heading h2 br {
+  display: none !important;
+}
+
+.services-vertical-heading h2 span {
+  margin-left: 8px !important;
+  color: inherit !important;
+}
+/* =========================================
+   SECURITY FORCE PAGE
+   Headings - Single Line + Same Colour
+========================================= */
+
+/* 1. Tailored Security. Professional Protection. */
+.security-hero-content h1 {
+  white-space: nowrap !important;
+}
+
+.security-hero-content h1 br {
+  display: none !important;
+}
+
+.security-hero-content h1 span {
+  margin-left: 8px !important;
+  color: inherit !important;
+}
+
+
+/* 2. The Meaning Behind SECURITY. */
+.security-meaning .section-title h2 {
+  white-space: nowrap !important;
+}
+
+.security-meaning .section-title h2 br {
+  display: none !important;
+}
+
+.security-meaning .section-title h2 span {
+  margin-left: 8px !important;
+  color: inherit !important;
+}
+
+
+/* 3. Complete Security Management Solutions. */
+.security-services .section-title h2 {
+  white-space: nowrap !important;
+}
+
+.security-services .section-title h2 br {
+  display: none !important;
+}
+
+.security-services .section-title h2 span {
+  margin-left: 8px !important;
+  color: inherit !important;
+}
+
+
+/* 4. Security Across Different Sectors. */
+.security-industries .section-title h2 {
+  white-space: nowrap !important;
+}
+
+.security-industries .section-title h2 br {
+  display: none !important;
+}
+
+.security-industries .section-title h2 span {
+  margin-left: 8px !important;
+  color: inherit !important;
+}
+
+
+/* 5. Technology Supporting Professional Security. */
+.electronic-security .section-title h2 {
+  white-space: nowrap !important;
+}
+
+.electronic-security .section-title h2 br {
+  display: none !important;
+}
+
+.electronic-security .section-title h2 span {
+  margin-left: 8px !important;
+  color: inherit !important;
+}
+/* =========================================
+   SECURITY ACRONYM - CLEAR VISIBILITY
+========================================= */
+
+.security-acronym {
+  display: grid !important;
+  grid-template-columns: repeat(8, 1fr) !important;
+  gap: 16px !important;
+  margin-top: 35px !important;
+}
+
+.security-acronym > div {
+  background: #071d36 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 10px !important;
+  min-height: 125px !important;
+  padding: 18px 10px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  text-align: center !important;
+  overflow: visible !important;
+}
+
+.security-acronym > div strong {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  margin-bottom: 10px !important;
+}
+
+.security-acronym > div span {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  width: 100% !important;
+}
+
+
+/* Hover effect */
+.security-acronym > div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.security-acronym > div:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 12px 28px rgba(7, 29, 54, 0.25) !important;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .security-acronym {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .security-acronym > div {
+    min-height: 110px !important;
+  }
+
+  .security-acronym > div strong {
+    font-size: 30px !important;
+  }
+
+  .security-acronym > div span {
+    font-size: 12px !important;
+  }
+
+}
+/* Security Force - heading colours */
+
+.security-approach .section-title h2,
+.security-approach .section-title h2 span,
+.security-special-section .special-content h2,
+.security-special-section .special-content h2 span,
+.security-audit .audit-content h2,
+.security-audit .audit-content h2 span {
+  color: inherit !important;
+}
+/* Event Security heading - white */
+.security-special-section .special-content h2,
+.security-special-section .special-content h2 span {
+  color: #ffffff !important;
+}
+/* Security Process description - visible on white background */
+.security-process .section-title > p:last-child {
+  color: #071d36 !important;
+  opacity: 1 !important;
+  font-weight: 500 !important;
+  line-height: 1.7 !important;
+  text-align: center !important;
+}
+/* Security Process heading - single line + same colour */
+.security-process .section-title h2 {
+  white-space: nowrap !important;
+}
+
+.security-process .section-title h2 br {
+  display: none !important;
+}
+
+.security-process .section-title h2,
+.security-process .section-title h2 span {
+  color: inherit !important;
+}
+
+.security-process .section-title h2 span {
+  margin-left: 8px !important;
+}
+/* Tailored Security - single line + same colour */
+.security-solutions-content h2 {
+  white-space: nowrap !important;
+}
+
+.security-solutions-content h2 br {
+  display: none !important;
+}
+
+.security-solutions-content h2,
+.security-solutions-content h2 span {
+  color: inherit !important;
+}
+
+.security-solutions-content h2 span {
+  margin-left: 8px !important;
+}
+/* =========================================
+   WHY CHOOSE US - HEADINGS
+   Single line + Same colour
+========================================= */
+
+/* Complete Facility Solutions */
+.vertical-section .section-heading h2 {
+  white-space: nowrap !important;
+}
+
+.vertical-section .section-heading h2 br {
+  display: none !important;
+}
+
+.vertical-section .section-heading h2,
+.vertical-section .section-heading h2 span {
+  color: inherit !important;
+}
+
+.vertical-section .section-heading h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Buddha Security Force */
+.security-vertical h2 {
+  white-space: nowrap !important;
+}
+
+.security-vertical h2 br {
+  display: none !important;
+}
+
+.security-vertical h2,
+.security-vertical h2 span {
+  color: inherit !important;
+}
+
+.security-vertical h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Buddha Housekeeping Services */
+.housekeeping-vertical h2 {
+  white-space: nowrap !important;
+}
+
+.housekeeping-vertical h2 br {
+  display: none !important;
+}
+
+.housekeeping-vertical h2,
+.housekeeping-vertical h2 span {
+  color: inherit !important;
+}
+
+.housekeeping-vertical h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Buddha Industrial Manpower */
+.manpower-vertical h2 {
+  white-space: nowrap !important;
+}
+
+.manpower-vertical h2 br {
+  display: none !important;
+}
+
+.manpower-vertical h2,
+.manpower-vertical h2 span {
+  color: inherit !important;
+}
+
+.manpower-vertical h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Security For Different Workplaces */
+.industries-section .section-heading h2 {
+  white-space: nowrap !important;
+}
+
+.industries-section .section-heading h2 br {
+  display: none !important;
+}
+
+.industries-section .section-heading h2,
+.industries-section .section-heading h2 span {
+  color: inherit !important;
+}
+
+.industries-section .section-heading h2 span {
+  margin-left: 8px !important;
+}
+/* =========================================
+   WHY CHOOSE US - HEADINGS
+   Single line + Same colour
+========================================= */
+
+/* Complete Facility Solutions */
+.vertical-section .section-heading h2 {
+  white-space: nowrap !important;
+}
+
+.vertical-section .section-heading h2 br {
+  display: none !important;
+}
+
+.vertical-section .section-heading h2,
+.vertical-section .section-heading h2 span {
+  color: inherit !important;
+}
+
+.vertical-section .section-heading h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Buddha Security Force */
+.security-vertical h2 {
+  white-space: nowrap !important;
+}
+
+.security-vertical h2 br {
+  display: none !important;
+}
+
+.security-vertical h2,
+.security-vertical h2 span {
+  color: inherit !important;
+}
+
+.security-vertical h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Buddha Housekeeping Services */
+.housekeeping-vertical h2 {
+  white-space: nowrap !important;
+}
+
+.housekeeping-vertical h2 br {
+  display: none !important;
+}
+
+.housekeeping-vertical h2,
+.housekeeping-vertical h2 span {
+  color: inherit !important;
+}
+
+.housekeeping-vertical h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Buddha Industrial Manpower */
+.manpower-vertical h2 {
+  white-space: nowrap !important;
+}
+
+.manpower-vertical h2 br {
+  display: none !important;
+}
+
+.manpower-vertical h2,
+.manpower-vertical h2 span {
+  color: inherit !important;
+}
+
+.manpower-vertical h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Security For Different Workplaces */
+.industries-section .section-heading h2 {
+  white-space: nowrap !important;
+}
+
+.industries-section .section-heading h2 br {
+  display: none !important;
+}
+
+.industries-section .section-heading h2,
+.industries-section .section-heading h2 span {
+  color: inherit !important;
+}
+
+.industries-section .section-heading h2 span {
+  margin-left: 8px !important;
+}
+/* Founder - Serving Since 2017 */
+.founder-experience .section-title h2 {
+  white-space: nowrap !important;
+}
+
+.founder-experience .section-title h2 br {
+  display: none !important;
+}
+
+.founder-experience .section-title h2,
+.founder-experience .section-title h2 span {
+  color: inherit !important;
+}
+
+.founder-experience .section-title h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Founder - Discipline Integrity Responsibility */
+.founder-message-content h2 {
+  white-space: nowrap !important;
+}
+
+.founder-message-content h2 br {
+  display: none !important;
+}
+
+.founder-message-content h2,
+.founder-message-content h2 span {
+  color: inherit !important;
+}
+
+.founder-message-content h2 span {
+  margin-left: 8px !important;
+}
+/* Founder headings - same colour */
+.founder-hero .inner-hero-content h1,
+.founder-hero .inner-hero-content h1 span,
+.founder-content h2,
+.founder-content h2 span {
+  color: inherit !important;
+}
+/* Founder Experience description - center */
+.founder-experience .section-title > p:last-child {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 850px !important;
+}
+/* Founder CTA text - center */
+.final-cta > div:first-child {
+  text-align: center !important;
+}
+
+.final-cta > div:first-child > p {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Vision & Mission - headings same line + same colour */
+
+/* Driven by Purpose. Focused on Excellence. */
+.vision-intro h2 {
+  white-space: nowrap !important;
+}
+
+.vision-intro h2 br {
+  display: none !important;
+}
+
+.vision-intro h2,
+.vision-intro h2 span {
+  color: inherit !important;
+}
+
+.vision-intro h2 span {
+  margin-left: 8px !important;
+}
+
+
+/* Principles Behind Our Service. */
+.values-section .section-title h2 {
+  white-space: nowrap !important;
+}
+
+.values-section .section-title h2 br {
+  display: none !important;
+}
+
+.values-section .section-title h2,
+.values-section .section-title h2 span {
+  color: inherit !important;
+}
+
+.values-section .section-title h2 span {
+  margin-left: 8px !important;
+}
+/* Vision & Mission - same colour */
+.vision-hero .inner-hero-content h1,
+.vision-hero .inner-hero-content h1 span {
+  color: inherit !important;
+}
+/* Contact page headings - same colour */
+
+/* Contact Us */
+.contact-hero .contact-hero-content h1,
+.contact-hero .contact-hero-content h1 span {
+  color: inherit !important;
+}
+
+/* Let's Protect & Serve Better. */
+.contact-info h2,
+.contact-info h2 span {
+  color: inherit !important;
+}
+
+/* Tell Us About Your Requirement. */
+.contact-form h2,
+.contact-form h2 span {
+  color: inherit !important;
+}
+/* Contact section - align both headings at the same level */
+.contact-section {
+  align-items: flex-start !important;
+}
+
+.contact-info,
+.contact-form {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.contact-info > .section-tag,
+.contact-form > .section-tag {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* Home - Solutions Built Around Your Industry */
+.workforce-home-content h2,
+.workforce-home-content h2 span {
+  color: inherit !important;
+}
+/* Home - Industries heading same colour */
+.industries-heading h2,
+.industries-heading h2 span {
+  color: inherit !important;
+}
+/* =========================================================
+   HOME INDUSTRY CARDS - ANIMATED BACKGROUND
+   ========================================================= */
+
+.industry-grid > div {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Moving light inside each card */
+.industry-grid > div::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -80%;
+  width: 60%;
+  height: 340%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.16),
+    transparent
+  );
+
+  transform: rotate(25deg);
+  pointer-events: none;
+
+  animation: industryCardLight 5s ease-in-out infinite;
+}
+
+/* Keep card content above the animation */
+.industry-grid > div > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Different timing for each card */
+.industry-grid > div:nth-child(2)::before {
+  animation-delay: .5s;
+}
+
+.industry-grid > div:nth-child(3)::before {
+  animation-delay: 1s;
+}
+
+.industry-grid > div:nth-child(4)::before {
+  animation-delay: 1.5s;
+}
+
+.industry-grid > div:nth-child(5)::before {
+  animation-delay: 2s;
+}
+
+.industry-grid > div:nth-child(6)::before {
+  animation-delay: 2.5s;
+}
+
+.industry-grid > div:nth-child(7)::before {
+  animation-delay: 3s;
+}
+
+.industry-grid > div:nth-child(8)::before {
+  animation-delay: 3.5s;
+}
+
+.industry-grid > div:nth-child(9)::before {
+  animation-delay: 4s;
+}
+
+.industry-grid > div:nth-child(10)::before {
+  animation-delay: 4.5s;
+}
+
+.industry-grid > div:nth-child(11)::before {
+  animation-delay: 5s;
+}
+
+.industry-grid > div:nth-child(12)::before {
+  animation-delay: 5.5s;
+}
+
+@keyframes industryCardLight {
+  0% {
+    left: -80%;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  70% {
+    left: 130%;
+    opacity: .7;
+  }
+
+  100% {
+    left: 150%;
+    opacity: 0;
+  }
+}
+/* =========================================================
+   NEW ANIMATION - SECURITY IMAGE PREMIUM EFFECT
+   ========================================================= */
+
+.security-image-card img {
+  animation: securityImageZoom 5s ease-in-out infinite alternate !important;
+  transform-origin: center center !important;
+}
+
+@keyframes securityImageZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.035);
+  }
+
+  100% {
+    transform: scale(1.07);
+  }
+}
+
+/* Soft light sweep across the image */
+.security-image-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.16),
+    transparent
+  );
+  transform: skewX(-18deg);
+  animation: securityLightSweep 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes securityLightSweep {
+  0% {
+    left: -120%;
+  }
+
+  45% {
+    left: 130%;
+  }
+
+  100% {
+    left: 130%;
+  }
+}
+/* About Us - heading same colour */
+.about-hero-content h1,
+.about-hero-content h1 span {
+  color: inherit !important;
+}
+/* =========================================================
+   ABOUT PAGE - PREMIUM BACKGROUND ANIMATION
+   ========================================================= */
+
+body.page-about {
+  background: #f6f9fc;
+}
+
+/* Soft moving blue light */
+body.page-about::before {
+  content: "";
+  position: fixed;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(29, 95, 167, 0.08);
+  filter: blur(80px);
+  top: 15%;
+  left: -180px;
+  pointer-events: none;
+  z-index: -1;
+  animation: aboutBlueLight 10s ease-in-out infinite alternate;
+}
+
+@keyframes aboutBlueLight {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(180px, 80px);
+  }
+
+  100% {
+    transform: translate(350px, -30px);
+  }
+}
+
+
+/* Second soft light */
+body.page-about::after {
+  content: "";
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(7, 29, 54, 0.06);
+  filter: blur(75px);
+  right: -160px;
+  bottom: 10%;
+  pointer-events: none;
+  z-index: -1;
+  animation: aboutDarkLight 12s ease-in-out infinite alternate;
+}
+
+@keyframes aboutDarkLight {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-120px, -80px);
+  }
+
+  100% {
+    transform: translate(-250px, 30px);
+  }
+}
+
+
+/* =========================================================
+   ABOUT PAGE - SUBTLE SECURITY GRID
+   ========================================================= */
+
+body.page-about .about-section,
+body.page-about .about-content,
+body.page-about .about-intro {
+  position: relative;
+}
+/* Home page trusted headings - blue colour */
+.more-than-service h2,
+.more-than-security h2 {
+  color: #1d5fa7 !important;
+}
+
+.more-than-service h2 span,
+.more-than-security h2 span {
+  color: #1d5fa7 !important;
+}
+/* Security Partner heading */
+.security-partner-hero-text h1 {
+  white-space: nowrap !important;
+  color: #fff !important;
+}
+
+.security-partner-hero-text h1 span {
+  color: #fff !important;
+}
+/* Industries intro heading - one line */
+.industries-intro h2 {
+  white-space: nowrap !important;
+  color: inherit !important;
+}
+
+.industries-intro h2 span {
+  color: inherit !important;
+  margin-left: 8px !important;
+}
+
+.industries-intro h2 br {
+  display: none !important;
+}

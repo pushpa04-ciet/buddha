@@ -29,8 +29,7 @@ function VisionMission() {
         </p>
 
         <h2>
-          Driven by Purpose.
-          <br />
+          Driven by Purpose
           <span>Focused on Excellence.</span>
         </h2>
 
