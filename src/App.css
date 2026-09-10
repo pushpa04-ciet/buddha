@@ -28445,3 +28445,26 @@ body.page-about .about-intro {
   }
 
 }
+/* =====================================
+   HOME HERO - SMALL MOBILE FIX
+   DO NOT CHANGE CARD DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+  /* Only move the card downward */
+  .hero-card {
+    transform: translateY(25px) !important;
+  }
+
+  /* Keep slider smooth */
+  .hero-slider-track {
+    transition: transform 0.8s ease-in-out !important;
+    will-change: transform !important;
+  }
+
+  .hero-slide {
+    flex-shrink: 0 !important;
+  }
+
+}
