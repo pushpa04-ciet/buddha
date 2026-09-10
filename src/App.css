@@ -27616,3 +27616,80 @@ body.page-about .about-intro {
     line-height: 1.2 !important;
   }
 }
+/* =====================================
+   SECURITY SOLUTIONS CARD - CENTER FIX
+===================================== */
+
+.security-solutions {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.security-solutions .section-title {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.security-solutions .section-title h2,
+.security-solutions .section-title p {
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+}
+
+.security-solutions .section-title p:last-child {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .security-solutions {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .security-solutions .section-title {
+    width: 100% !important;
+    height: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+  }
+}
+/* =====================================
+   SECURITY FORCE - MOBILE SECTION GAP
+===================================== */
+
+@media (max-width: 768px) {
+
+  .security-solutions {
+    margin-bottom: 25px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .security-meaning {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .security-solutions {
+    margin-bottom: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .security-meaning {
+    margin-top: 0 !important;
+    padding-top: 15px !important;
+  }
+
+}
