@@ -27977,3 +27977,228 @@ body.page-about .about-intro {
   }
 
 }
+/* =====================================
+   HOME HERO - MOBILE CARD & BUTTON FIX
+===================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto !important;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+
+  .hero-container {
+    position: relative !important;
+    min-height: 620px !important;
+    height: auto !important;
+    padding: 25px 15px 35px !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-slider {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .hero-slider-track {
+    display: flex !important;
+  }
+
+  .hero-slide {
+    min-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 560px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding: 35px 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Main text area */
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    text-align: center !important;
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hero-content h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+
+    margin: 12px 0 !important;
+
+    line-height: 1.12 !important;
+    white-space: normal !important;
+  }
+
+  .hero-text {
+    width: 100% !important;
+    max-width: 330px !important;
+
+    margin: 0 auto 18px !important;
+
+    text-align: center !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Quote + Explore buttons */
+  .hero-buttons {
+    width: 100% !important;
+    max-width: 330px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-buttons a {
+    width: 100% !important;
+    max-width: 280px !important;
+
+    margin: 0 !important;
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+  }
+
+  /* SECURITY SERVICES card */
+  .hero-card {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 280px !important;
+
+    min-height: 125px !important;
+    height: auto !important;
+
+    margin: 28px auto 0 !important;
+    padding: 18px 15px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    gap: 5px !important;
+
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+
+    z-index: 5 !important;
+  }
+
+  .hero-card-icon {
+    position: static !important;
+
+    margin: 0 0 3px !important;
+    line-height: 1 !important;
+  }
+
+  .hero-card strong {
+    position: static !important;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    text-align: center !important;
+
+    line-height: 1.2 !important;
+    white-space: normal !important;
+  }
+
+  .hero-card span {
+    position: static !important;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 2px 0 0 !important;
+
+    text-align: center !important;
+
+    line-height: 1.35 !important;
+    white-space: normal !important;
+  }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 420px) {
+
+  .hero-container {
+    min-height: 600px !important;
+    padding: 20px 12px 30px !important;
+  }
+
+  .hero-slide {
+    min-height: 550px !important;
+    padding: 30px 10px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 32px !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero-text {
+    max-width: 300px !important;
+    font-size: 14px !important;
+  }
+
+  .hero-buttons {
+    max-width: 300px !important;
+  }
+
+  .hero-buttons a {
+    max-width: 260px !important;
+  }
+
+  .hero-card {
+    max-width: 250px !important;
+    min-height: 115px !important;
+
+    margin-top: 22px !important;
+    padding: 16px 12px !important;
+  }
+
+  .hero-card strong {
+    font-size: 17px !important;
+  }
+
+  .hero-card span {
+    font-size: 11px !important;
+  }
+
+}
