@@ -25187,3 +25187,661 @@ body.page-about .about-intro {
   }
 
 }
+/* =========================================================
+   INDUSTRIES HERO DESCRIPTION - MOBILE FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .industries-hero-content .hero-description {
+    white-space: normal !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+}
+
+
+/* Extra small mobile */
+@media (max-width: 420px) {
+
+  .industries-hero-content .hero-description {
+    font-size: 14px;
+    line-height: 1.55;
+    padding-right: 5px;
+  }
+
+}
+/* =========================================================
+   SECURITY PARTNER HERO TEXT - MOBILE FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .security-partner-hero-text {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .security-partner-hero-text {
+    font-size: 14px;
+    line-height: 1.55;
+
+    max-width: 95% !important;
+  }
+
+}
+/* =========================================================
+   SERVICES PAGE - MOBILE TEXT OVERFLOW FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .services-hero-content h1,
+  .services-hero-content h1 span,
+  .services-hero-content p,
+  .services-intro h2,
+  .services-intro h2 span,
+  .services-intro p,
+  .services-section h2,
+  .services-section h2 span,
+  .services-section p {
+    max-width: 100% !important;
+    width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .services-hero-content,
+  .services-intro,
+  .services-section {
+    overflow: hidden;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .services-hero-content h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .services-intro h2,
+  .services-section h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .services-hero-content p,
+  .services-intro p,
+  .services-section p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+}
+/* =========================================================
+   SECURITY FORCE PAGE - MOBILE TEXT OVERFLOW FIX
+   Desktop design will remain unchanged
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Main hero text */
+  .security-hero-content,
+  .security-hero-content h1,
+  .security-hero-content h1 span,
+  .security-hero-content p,
+
+  /* Security solutions */
+  .security-solutions-content,
+  .security-solutions-content h2,
+  .security-solutions-content h2 span,
+  .security-solutions-content p,
+
+  /* All section headings */
+  .section-title,
+  .section-title h2,
+  .section-title h2 span,
+  .section-title p,
+
+  /* Approach */
+  .security-approach,
+  .security-approach h2,
+  .security-approach h2 span,
+
+  /* Event security */
+  .special-content,
+  .special-content h2,
+  .special-content h2 span,
+  .special-content p,
+
+  /* Audit */
+  .audit-content,
+  .audit-content h2,
+  .audit-content h2 span,
+  .audit-content p,
+
+  /* Process */
+  .security-process,
+  .security-process h2,
+  .security-process h2 span,
+  .security-process p {
+
+    max-width: 100% !important;
+    width: 100%;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+
+  /* Prevent complete page from horizontal scrolling */
+  .security-hero,
+  .security-solutions,
+  .security-meaning,
+  .security-services,
+  .security-industries,
+  .security-approach,
+  .security-special-section,
+  .electronic-security,
+  .security-audit,
+  .security-process,
+  .security-cta {
+    overflow-x: hidden;
+  }
+
+
+  /* Security service cards */
+  .security-service-card h3,
+  .security-service-card p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+
+  /* Industry names */
+  .security-industry-grid div {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Approach cards */
+  .security-approach-card h3,
+  .security-approach-card p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Event security list */
+  .special-list strong {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Electronic security cards */
+  .electronic-card h3,
+  .electronic-card p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Audit cards */
+  .audit-list h3,
+  .audit-list p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Process cards */
+  .process-card h3,
+  .process-card p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE SCREENS
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .security-hero-content h1 {
+    font-size: 32px;
+    line-height: 1.12;
+  }
+
+  .security-solutions-content h2,
+  .section-title h2,
+  .special-content h2,
+  .audit-content h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .security-hero-content p,
+  .security-solutions-content p,
+  .section-title > p,
+  .special-content p,
+  .audit-content p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+}
+/* =========================================================
+   SECURITY FORCE PAGE - MOBILE TEXT OVERFLOW FIX
+   Desktop design will remain unchanged
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Main hero text */
+  .security-hero-content,
+  .security-hero-content h1,
+  .security-hero-content h1 span,
+  .security-hero-content p,
+
+  /* Security solutions */
+  .security-solutions-content,
+  .security-solutions-content h2,
+  .security-solutions-content h2 span,
+  .security-solutions-content p,
+
+  /* All section headings */
+  .section-title,
+  .section-title h2,
+  .section-title h2 span,
+  .section-title p,
+
+  /* Approach */
+  .security-approach,
+  .security-approach h2,
+  .security-approach h2 span,
+
+  /* Event security */
+  .special-content,
+  .special-content h2,
+  .special-content h2 span,
+  .special-content p,
+
+  /* Audit */
+  .audit-content,
+  .audit-content h2,
+  .audit-content h2 span,
+  .audit-content p,
+
+  /* Process */
+  .security-process,
+  .security-process h2,
+  .security-process h2 span,
+  .security-process p {
+
+    max-width: 100% !important;
+    width: 100%;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+
+  /* Prevent complete page from horizontal scrolling */
+  .security-hero,
+  .security-solutions,
+  .security-meaning,
+  .security-services,
+  .security-industries,
+  .security-approach,
+  .security-special-section,
+  .electronic-security,
+  .security-audit,
+  .security-process,
+  .security-cta {
+    overflow-x: hidden;
+  }
+
+
+  /* Security service cards */
+  .security-service-card h3,
+  .security-service-card p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+
+  /* Industry names */
+  .security-industry-grid div {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Approach cards */
+  .security-approach-card h3,
+  .security-approach-card p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Event security list */
+  .special-list strong {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Electronic security cards */
+  .electronic-card h3,
+  .electronic-card p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Audit cards */
+  .audit-list h3,
+  .audit-list p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+
+  /* Process cards */
+  .process-card h3,
+  .process-card p {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE SCREENS
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .security-hero-content h1 {
+    font-size: 32px;
+    line-height: 1.12;
+  }
+
+  .security-solutions-content h2,
+  .section-title h2,
+  .special-content h2,
+  .audit-content h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .security-hero-content p,
+  .security-solutions-content p,
+  .section-title > p,
+  .special-content p,
+  .audit-content p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+}
+/* =====================================================
+   MOBILE SERVICES DROPDOWN - SEPARATOR LINES
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .services-dropdown a {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .services-dropdown a:last-child {
+    border-bottom: none !important;
+  }
+
+}
+/* =====================================================
+   FOUNDER CARDS - CENTER ALIGNMENT
+===================================================== */
+
+.founder-highlights {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.founder-card {
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .founder-highlights {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center !important;
+  }
+
+  .founder-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+}
+/* =====================================================
+   VISION & MISSION - MOBILE CARD TEXT FIX
+   Desktop design unchanged
+===================================================== */
+
+@media (max-width: 768px) {
+
+  /* INTRO */
+  .vision-intro {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .vision-intro h2,
+  .vision-intro h2 span,
+  .vision-intro > p {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+    box-sizing: border-box;
+  }
+
+
+  /* VISION / MISSION / SERVICES CARDS */
+  .vm-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .vm-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .vm-card h2,
+  .vm-card h2 span,
+  .vm-card .vm-main-text,
+  .vm-card .section-tag {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+    box-sizing: border-box;
+  }
+
+
+  /* CORE VALUES */
+  .values-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .values-section .section-title,
+  .values-section .section-title h2,
+  .values-section .section-title h2 span {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .values-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .value-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .value-box h3,
+  .value-box p {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+
+  /* CLOSING CTA */
+  .founder-quote {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .founder-quote h2,
+  .founder-quote p {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+  .vision-intro h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .vision-intro > p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .vm-card h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .vm-card .vm-main-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .value-box h3 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .value-box p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .founder-quote h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+}
