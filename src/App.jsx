@@ -18,6 +18,8 @@ import emailjs from "@emailjs/browser";
 import Housekeeping from "./assets/pages/Housekeeping";
 import IndustrialManpower from "./assets/pages/IndustrialManpower";
 import SecurityPartner from "./assets/pages/SecurityPartner";
+import Blog from "./assets/pages/Blog";
+import BlogArticle from "./assets/pages/BlogArticle";
 
 
 function ScrollToTop() {
@@ -308,6 +310,8 @@ function App() {
     <Link to="/vision-mission" onClick={() => setMenuOpen(false)}>
       Vision & Mission
     </Link>
+    <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog
+    </Link>
 
     <Link to="/contact" onClick={() => setMenuOpen(false)}>
       Contact
@@ -520,6 +524,11 @@ function App() {
         />
         <Route path="industries"
         element={<Industries />}
+        />
+        <Route path="/blog" element={<Blog />} 
+        />
+        <Route path="/blog/:slug"
+        element={<BlogArticle />}
         />
 
       </Routes>

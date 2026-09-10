@@ -38,7 +38,9 @@ useEffect(() => {
   <div className="hero-overlay"></div>
 
   <div className="hero-container">
-
+    <div className="hero-phone">
+  ☎ 8096083322
+</div>
     {/* LEFT ARROW */}
     <button
       type="button"

@@ -27025,3 +27025,98 @@ body.page-about .about-intro {
     padding: 0 10px !important;
   }
 }
+.hero-phone {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  right: auto;
+  z-index: 20;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero-phone:hover {
+  color: #c89b3c;
+}
+
+@media (max-width: 768px) {
+  .hero-phone {
+    top: 15px;
+    left: 18px;
+    right: auto;
+    font-size: 12px;
+  }
+}
+.hero-phone {
+  position: absolute;
+  top: 8px;
+  left: 30px;
+  right: auto;
+  z-index: 20;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero-phone:hover {
+  color: #c89b3c;
+}
+
+@media (max-width: 768px) {
+  .hero-phone {
+    top: 6px;
+    left: 18px;
+    right: auto;
+    font-size: 12px;
+  }
+}
+.hero-phone {
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  right: auto;
+  z-index: 20;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero-phone:hover {
+  color: #c89b3c;
+}
+
+@media (max-width: 768px) {
+  .hero-phone {
+    top: 2px;
+    left: 18px;
+    font-size: 12px;
+  }
+}
+.hero-card {
+  position: relative;
+}
+
+.hero-card .hero-phone {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  top: auto;
+  right: auto;
+  z-index: 50;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .hero-card .hero-phone {
+    left: 15px;
+    bottom: 12px;
+    font-size: 12px;
+  }
+}
