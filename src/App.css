@@ -27693,3 +27693,35 @@ body.page-about .about-intro {
   }
 
 }
+/* =====================================
+   SECURITY SOLUTIONS CARD
+   CENTER CONTENT VERTICALLY
+===================================== */
+
+@media (max-width: 768px) {
+
+  .security-solutions {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .security-solutions .section-title {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .security-solutions .section-title > * {
+    margin-top: 0 !important;
+  }
+
+}
