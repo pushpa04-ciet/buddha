@@ -230,10 +230,6 @@ function BlogArticle() {
       {/* ARTICLE CONTENT */}
       <section className="blog-article-content">
 
-        <Link to="/blog" className="blog-back-link">
-          ← Back to Blog
-        </Link>
-
         <article className="blog-article-card">
 
           <div className="blog-article-label">
@@ -251,6 +247,10 @@ function BlogArticle() {
           ))}
 
         </article>
+         <Link to="/blog" className="blog-back-link">
+          ← Back to Blog
+        </Link>
+
 
       </section>
 
