@@ -27555,3 +27555,64 @@ body.page-about .about-intro {
     line-height: 1.55 !important;
   }
 }
+/* =====================================
+   FOUNDER - DISCIPLINE INTEGRITY RESPONSIBILITY
+   MOBILE HEADING FIX
+===================================== */
+
+@media (max-width: 768px) {
+
+  .founder-values {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .founder-values .section-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .founder-values .section-title h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+
+  .founder-values .section-title h2 span {
+    display: inline !important;
+    width: auto !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .founder-values .section-title {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .founder-values .section-title h2 {
+    font-size: 27px !important;
+    line-height: 1.2 !important;
+  }
+}
