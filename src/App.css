@@ -8476,40 +8476,6 @@ section button:hover {
 html {
   scroll-behavior: smooth;
 }
-/* =========================
-   QUOTE POPUP
-========================= */
-
-.quote-popup {
-  width: min(900px, 92vw);
-  max-height: 90vh;
-  overflow-y: auto;
-
-  background: rgba(255, 255, 255, 0.97);
-  border-radius: 24px;
-
-  padding: 0;
-  position: relative;
-
-  box-shadow:
-    0 25px 80px rgba(0, 0, 0, 0.35);
-
-  animation: quotePopupIn 0.55s ease forwards;
-}
-
-/* Popup entrance */
-
-@keyframes quotePopupIn {
-  from {
-    opacity: 0;
-    transform: translateY(50px) scale(0.92);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 
 /* =========================
@@ -28585,3 +28551,6 @@ body.page-about .about-intro {
   }
 
 }
+
+
+

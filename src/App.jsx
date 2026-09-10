@@ -362,111 +362,527 @@ function App() {
 
 </nav>
 {quoteOpen && (
-  <div className="quote-overlay" onClick={() => setQuoteOpen(false)}>
+  <>
+    <style>{`
+      .quote-modal-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: rgba(2, 15, 30, .78);
+        backdrop-filter: blur(7px);
+      }
+
+      .quote-modal {
+        position: relative;
+        width: 900px;
+        height: 540px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 38% 62%;
+        overflow: hidden;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 25px 70px rgba(0,0,0,.35);
+        font-family: inherit;
+      }
+
+      /* LEFT */
+
+      .quote-modal-left {
+        position: relative;
+        overflow: hidden;
+        padding: 28px;
+        display: flex;
+        align-items: flex-end;
+        background:
+          linear-gradient(145deg,#03172b,#07345b,#0b4779);
+      }
+
+      .quote-modal-left:before {
+        content: "";
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        top: -80px;
+        right: -80px;
+        border-radius: 50%;
+        background: rgba(74,160,230,.2);
+        filter: blur(25px);
+      }
+
+      .quote-modal-pattern {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 7px;
+        color: rgba(255,255,255,.08);
+        font-weight: 800;
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+
+      .quote-modal-pattern span:first-child {
+        font-size: 38px;
+      }
+
+      .quote-modal-left-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 20px;
+        border-radius: 14px;
+        background: rgba(2,17,32,.72);
+      }
+
+      .quote-modal-left-content small {
+        color: #55aaff;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+      }
+
+      .quote-modal-left-content h3 {
+        margin: 8px 0;
+        color: white;
+        font-size: 26px;
+        line-height: 1.15;
+      }
+
+      .quote-modal-left-content p {
+        margin: 0;
+        color: rgba(255,255,255,.68);
+        font-size: 11px;
+        line-height: 1.55;
+      }
+
+      /* RIGHT */
+
+      .quote-modal-right {
+        padding: 30px 34px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .quote-modal-tag {
+        margin: 0 0 7px;
+        color: #1266ae;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+        text-align: center;
+      }
+
+      .quote-modal-title {
+        margin: 0;
+        color: #061d36;
+        font-size: 29px;
+        line-height: 1.08;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .quote-modal-title span {
+        color: #1266ae;
+      }
+
+      .quote-modal-description {
+        margin: 9px auto 17px;
+        max-width: 470px;
+        color: #718091;
+        font-size: 11px;
+        line-height: 1.45;
+        text-align: center;
+      }
+
+      .quote-modal-form {
+        width: 100%;
+      }
+
+      .quote-modal-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .quote-modal-field {
+        margin-bottom: 11px;
+      }
+
+      .quote-modal-field label {
+        display: block;
+        margin-bottom: 5px;
+        color: #132b44;
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      .quote-modal-field input,
+      .quote-modal-field select,
+      .quote-modal-field textarea {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #d8e1e9;
+        border-radius: 7px;
+        outline: none;
+        background: #f8fafc;
+        color: #1b3045;
+        font-family: inherit;
+        font-size: 11px;
+        transition: .2s;
+      }
+
+      .quote-modal-field input,
+      .quote-modal-field select {
+        height: 38px;
+        padding: 0 11px;
+      }
+
+      .quote-modal-field textarea {
+        height: 62px;
+        padding: 9px 11px;
+        resize: none;
+      }
+
+      .quote-modal-field input:focus,
+      .quote-modal-field select:focus,
+      .quote-modal-field textarea:focus {
+        border-color: #1670bd;
+        background: white;
+        box-shadow: 0 0 0 2px rgba(22,112,189,.1);
+      }
+
+      .quote-modal-submit {
+        width: 100%;
+        height: 42px;
+        margin-top: 2px;
+        border: 0;
+        border-radius: 7px;
+        background: linear-gradient(135deg,#061d36,#0d548d);
+        color: white;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: .8px;
+        cursor: pointer;
+        transition: .2s;
+      }
+
+      .quote-modal-submit:hover {
+        background: linear-gradient(135deg,#0d548d,#1674c2);
+        transform: translateY(-1px);
+      }
+
+      .quote-modal-note {
+        margin: 7px 0 0;
+        color: #9aa5af;
+        text-align: center;
+        font-size: 9px;
+      }
+
+      .quote-modal-close {
+        position: absolute;
+        z-index: 10;
+        top: 13px;
+        right: 13px;
+        width: 34px;
+        height: 34px;
+        border: 0;
+        border-radius: 50%;
+        background: white;
+        color: #17324b;
+        font-size: 22px;
+        line-height: 1;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0,0,0,.16);
+      }
+
+      .quote-modal-close:hover {
+        background: #092b4d;
+        color: white;
+      }
+
+      /* TABLET / MOBILE */
+
+      @media (max-width: 720px) {
+        .quote-modal {
+          width: 500px;
+          height: auto;
+          max-height: calc(100vh - 30px);
+          grid-template-columns: 1fr;
+        }
+
+        .quote-modal-left {
+          display: none;
+        }
+
+        .quote-modal-right {
+          padding: 30px 25px 22px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .quote-modal-overlay {
+          padding: 10px;
+        }
+
+        .quote-modal-right {
+          padding: 27px 18px 18px;
+        }
+
+        .quote-modal-title {
+          font-size: 24px;
+        }
+
+        .quote-modal-row {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+
+        .quote-modal-field textarea {
+          height: 58px;
+        }
+      }
+    `}</style>
+
     <div
-      className="quote-popup"
-      onClick={(e) => e.stopPropagation()}
+      className="quote-modal-overlay"
+      onClick={() => setQuoteOpen(false)}
     >
-      <button
-        className="quote-close"
-        onClick={() => setQuoteOpen(false)}
+      <div
+        className="quote-modal"
+        onClick={(e) => e.stopPropagation()}
       >
-        ×
-      </button>
 
-      <p className="section-tag">GET A SECURITY QUOTE</p>
-
-      <h2>
-        SHARE YOUR NEEDS AND WE'LL
-        <br />
-        <span>PROVIDE A QUOTE AND TIMELINES</span>
-      </h2>
-      <div className="quote-image">
-  <div className="security-scan"></div>
-
-  <div className="security-pattern">
-    <span>◈</span>
-    <span>SECURITY</span>
-    <span>24/7</span>
-  </div>
-
-  <div className="quote-image-overlay">
-    <h3>Professional Security</h3>
-    <p>Trusted Protection • 24/7</p>
-  </div>
-</div>
-
-      <form
-  onSubmit={(e) => {
-    e.preventDefault();
-
-    const form = e.target;
-
-   emailjs.sendForm(
-  "service_tcq2vme",
-  "template_lgz3odd",
-  form,
-  "X69VE8Jb7VFb7jzOn"
-)
-  .then(() => {
-    alert("Thank you! Your quote request has been sent successfully.");
-    setQuoteOpen(false);
-    form.reset();
-  })
-  .catch((error) => {
-    console.error("EmailJS Error:", error);
-    console.log("Status:", error.status);
-    console.log("Text:", error.text);
-
-    alert(
-      "EmailJS Error\n\nStatus: " +
-      error.status +
-      "\nMessage: " +
-      error.text
-    );
-  });
-  }}
->
-        <input
-          type="text"
-          placeholder="Your Name"
-          required
-        />
-
-        <input
-          type="tel"
-          placeholder="Phone Number"
-          required
-        />
-
-        <input
-          type="text"
-          placeholder="Company / Organization"
-        />
-
-        <select required>
-          <option value="">Select Service</option>
-          <option>Buddha Security Force</option>
-          <option>CCTV / Surveillance</option>
-          <option>Access Control</option>
-          <option>Fire Alarm</option>
-          <option>Burglar Alarm</option>
-          <option>Security Consultation & Audit</option>
-        </select>
-
-        <textarea
-          rows="4"
-          placeholder="Tell us about your requirements..."
-          required
-        ></textarea>
-
-        <button type="submit" className="quote-submit">
-          REQUEST A QUOTE →
+        {/* CLOSE */}
+        <button
+          type="button"
+          className="quote-modal-close"
+          onClick={() => setQuoteOpen(false)}
+        >
+          ×
         </button>
-      </form>
+
+
+        {/* LEFT SIDE */}
+        <div className="quote-modal-left">
+
+          <div className="quote-modal-pattern">
+            <span>◈</span>
+            <span>SECURITY</span>
+            <span>24/7</span>
+          </div>
+
+          <div className="quote-modal-left-content">
+
+            <small>
+              SECURITY • SAFETY • TRUST
+            </small>
+
+            <h3>
+              Protect What
+              <br />
+              Matters Most.
+            </h3>
+
+            <p>
+              Professional security solutions
+              designed around your business,
+              property and people.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        {/* RIGHT SIDE */}
+        <div className="quote-modal-right">
+
+          <p className="quote-modal-tag">
+            GET A SECURITY QUOTE
+          </p>
+
+          <h2 className="quote-modal-title">
+            Share Your Needs
+            <br />
+            <span>We'll Take Care Of The Rest.</span>
+          </h2>
+
+          <p className="quote-modal-description">
+            Tell us what you need and our team will
+            provide a suitable solution, quote and timeline.
+          </p>
+
+
+          <form
+            className="quote-modal-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+
+              const form = e.target;
+
+              emailjs
+                .sendForm(
+                  "service_tcq2vme",
+                  "template_lgz3odd",
+                  form,
+                  "X69VE8Jb7VFb7jzOn"
+                )
+                .then(() => {
+
+                  alert(
+                    "Thank you! Your quote request has been sent successfully."
+                  );
+
+                  setQuoteOpen(false);
+                  form.reset();
+
+                })
+                .catch((error) => {
+
+                  console.error("EmailJS Error:", error);
+
+                  alert(
+                    "Unable to send your request. Please try again."
+                  );
+
+                });
+            }}
+          >
+
+            {/* NAME + PHONE */}
+            <div className="quote-modal-row">
+
+              <div className="quote-modal-field">
+                <label>Your Name</label>
+
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div className="quote-modal-field">
+                <label>Phone Number</label>
+
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+
+            </div>
+
+
+            {/* COMPANY */}
+            <div className="quote-modal-field">
+
+              <label>
+                Company / Organization
+              </label>
+
+              <input
+                type="text"
+                name="company"
+                placeholder="Enter company name"
+              />
+
+            </div>
+
+
+            {/* SERVICE */}
+            <div className="quote-modal-field">
+
+              <label>
+                Service Required
+              </label>
+
+              <select
+                name="service"
+                defaultValue=""
+                required
+              >
+                <option value="" disabled>
+                  Select a service
+                </option>
+
+                <option value="Buddha Security Force">
+                  Buddha Security Force
+                </option>
+
+                <option value="CCTV / Surveillance">
+                  CCTV / Surveillance
+                </option>
+
+                <option value="Access Control">
+                  Access Control
+                </option>
+
+                <option value="Fire Alarm">
+                  Fire Alarm
+                </option>
+
+                <option value="Burglar Alarm">
+                  Burglar Alarm
+                </option>
+
+                <option value="Security Consultation & Audit">
+                  Security Consultation & Audit
+                </option>
+
+              </select>
+
+            </div>
+
+
+            {/* REQUIREMENT */}
+            <div className="quote-modal-field">
+
+              <label>
+                Your Requirements
+              </label>
+
+              <textarea
+                name="message"
+                placeholder="Tell us about your requirements..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            {/* SUBMIT */}
+            <button
+              type="submit"
+              className="quote-modal-submit"
+            >
+              REQUEST A QUOTE&nbsp; →
+            </button>
+
+            <p className="quote-modal-note">
+              🔒 Your information is kept confidential.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
     </div>
-  </div>
+  </>
 )}
+
       <Routes>
 
         <Route
