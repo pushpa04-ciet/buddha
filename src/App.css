@@ -25845,3 +25845,364 @@ body.page-about .about-intro {
   }
 
 }
+/* =====================================================
+   SECURITY FORCE - MOBILE HEADING FIX
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .security-meaning .section-title h2,
+  .security-services .section-title h2,
+  .security-industries .section-title h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    line-height: 1.15;
+    box-sizing: border-box;
+  }
+
+  .security-meaning .section-title h2 span,
+  .security-services .section-title h2 span,
+  .security-industries .section-title h2 span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+  .security-meaning .section-title h2,
+  .security-services .section-title h2,
+  .security-industries .section-title h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+}
+/* =====================================================
+   ADDITIONAL SECURITY FORCE MOBILE HEADINGS
+===================================================== */
+
+@media (max-width: 768px) {
+
+  /* A Structured Approach / To Professional Security */
+  .security-process .section-title h2,
+  .security-process .section-title h2 span {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    line-height: 1.15;
+    box-sizing: border-box;
+  }
+
+
+  /* Technology Supporting / Professional Security */
+  .electronic-security .section-title h2,
+  .electronic-security .section-title h2 span {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    line-height: 1.15;
+    box-sizing: border-box;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .security-process .section-title h2,
+  .electronic-security .section-title h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+}
+/* =========================================================
+   WHY US - FINAL MOBILE FIX
+   Fixes headings + vertical cards + industries
+   Desktop remains unchanged
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* ---------- MAIN MOBILE CONTAINER ---------- */
+
+  .why-main-hero,
+  .why-benefits,
+  .vertical-section,
+  .industries-section,
+  .why-priority,
+  .safety-section,
+  .why-contact {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* =====================================================
+     COMPLETE FACILITY SOLUTIONS
+  ===================================================== */
+
+  .vertical-section .section-heading {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .vertical-section .section-heading h2 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+  }
+
+  .vertical-section .section-heading h2 span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  .vertical-section .heading-description {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+  }
+
+
+  /* =====================================================
+     THREE VERTICAL CARDS
+  ===================================================== */
+
+  .vertical-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .vertical-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .vertical-card h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.15 !important;
+  }
+
+  .vertical-card h2 span {
+    display: inline !important;
+    white-space: normal !important;
+    word-break: normal !important;
+  }
+
+  .vertical-card p,
+  .vertical-card li,
+  .vertical-card a {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    box-sizing: border-box !important;
+  }
+
+  .vertical-card ul {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 18px !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* =====================================================
+     WHERE WE SERVE
+  ===================================================== */
+
+  .industries-section .section-heading {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .industries-section .section-heading h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+  }
+
+  .industries-section .section-heading h2 span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  .industry-list {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .industry-list div {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+
+  /* =====================================================
+     WHY CHOOSE US - BENEFITS
+  ===================================================== */
+
+  .why-benefits {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .benefit-title,
+  .benefit-item {
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .benefit-item h3 {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+
+  /* =====================================================
+     WHY PRIORITY
+  ===================================================== */
+
+  .priority-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .priority-content h2,
+  .priority-content p {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+
+  /* =====================================================
+     SAFETY + CONTACT
+  ===================================================== */
+
+  .safety-section h2,
+  .safety-section p,
+  .safety-section a,
+  .why-contact h2,
+  .why-contact p,
+  .why-contact a {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media screen and (max-width: 420px) {
+
+  .vertical-section .section-heading h2,
+  .industries-section .section-heading h2 {
+    font-size: 29px !important;
+    line-height: 1.15 !important;
+  }
+
+  .vertical-card h2 {
+    font-size: 27px !important;
+    line-height: 1.15 !important;
+  }
+
+  .vertical-card p,
+  .vertical-card li {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+
+  .heading-description {
+    font-size: 14px !important;
+  }
+
+  .industry-list div {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+}
+/* Mobile Services dropdown - equal white borders */
+@media (max-width: 768px) {
+  .services-dropdown a {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .services-dropdown a:last-child {
+    border-bottom: none !important;
+  }
+}
