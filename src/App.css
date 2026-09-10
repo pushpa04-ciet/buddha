@@ -24660,3 +24660,204 @@ body.page-about .about-intro {
   }
 
 }
+/* =========================================================
+   HOME HERO - MOBILE VIEW FIX
+   Existing CSS ni disturb cheyyadu
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .hero-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* SLIDER WINDOW */
+  .hero-slider {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 3 SLIDES */
+  .hero-slider-track {
+    display: flex !important;
+    width: 300% !important;
+    max-width: none !important;
+    transition: transform 0.8s ease-in-out !important;
+  }
+
+  /* EACH SLIDE */
+  .hero-slide {
+    flex: 0 0 33.333333% !important;
+    width: 33.333333% !important;
+    max-width: 33.333333% !important;
+    box-sizing: border-box !important;
+
+    padding: 35px 22px 45px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+
+  /* ================= CONTENT ================= */
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-brand {
+    display: inline-block !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  .hero-brand h2 {
+    font-size: 21px !important;
+    line-height: 1.2 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .hero-brand span {
+    font-size: 10px !important;
+    margin-top: 5px !important;
+    text-align: center !important;
+  }
+
+  .hero-small {
+    font-size: 10px !important;
+    letter-spacing: 1.5px !important;
+    text-align: center !important;
+  }
+
+
+  /* MAIN HERO HEADING */
+  .hero-content h1 {
+    font-size: 40px !important;
+    line-height: 1.08 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    margin: 15px 0 !important;
+  }
+
+  .hero-content h1 br {
+    display: block !important;
+  }
+
+  .hero-content h1 span {
+    margin-left: 0 !important;
+  }
+
+
+  /* DESCRIPTION */
+  .hero-text {
+    width: 100% !important;
+    max-width: 330px !important;
+    margin: 0 auto 20px !important;
+
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+
+    text-align: center !important;
+  }
+
+
+  /* ================= BUTTONS ================= */
+
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+    width: 100% !important;
+
+    margin-top: 15px !important;
+  }
+
+  .hero-buttons a {
+    width: 210px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+
+  /* ================= HERO CARD ================= */
+
+  .hero-card {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 320px !important;
+
+    height: 160px !important;
+    min-height: 160px !important;
+
+    margin: 28px auto 0 !important;
+
+    border-radius: 14px !important;
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .hero-card-icon {
+    font-size: 27px !important;
+    margin-bottom: 7px !important;
+  }
+
+  .hero-card strong {
+    font-size: 18px !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero-card span {
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+  }
+
+
+  /* ================= ARROWS ================= */
+
+  .hero-arrow {
+    width: 40px !important;
+    height: 40px !important;
+    z-index: 50 !important;
+  }
+
+  .hero-arrow-left {
+    left: 10px !important;
+  }
+
+  .hero-arrow-right {
+    right: 10px !important;
+  }
+
+
+  /* ================= DOTS ================= */
+
+  .hero-dots {
+    position: relative !important;
+    z-index: 50 !important;
+    margin-top: 5px !important;
+  }
+
+}
