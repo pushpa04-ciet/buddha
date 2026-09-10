@@ -26638,3 +26638,190 @@ body.page-about .about-intro {
     padding: 18px !important;
   }
 }
+/* Buddha Security Services - Card Top Content Center */
+@media (max-width: 768px) {
+
+  .security-solutions-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .security-solutions-content .section-tag,
+  .security-solutions-content h2,
+  .security-solutions-content h2 span,
+  .security-solutions-content p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+  .security-solutions-content h2 {
+    line-height: 1.15 !important;
+  }
+
+  .security-solutions-content h2 span {
+    display: block !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .security-solutions-content {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .security-solutions-content h2 {
+    font-size: 29px !important;
+    line-height: 1.15 !important;
+  }
+
+  .security-solutions-content p {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+}
+/* Services Page - Complete Workplace Solutions */
+@media (max-width: 768px) {
+  .services-section .section-title h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    white-space: normal !important;
+    line-height: 1.15 !important;
+  }
+
+  .services-section .section-title h2 span {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .services-section .section-title h2 {
+    font-size: 28px !important;
+    padding: 0 10px !important;
+  }
+}
+/* FOUNDER PAGE - Mobile Center Alignment */
+@media (max-width: 768px) {
+
+  /* Founder main content */
+  .founder-content,
+  .founder-section,
+  .founder-intro {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .founder-content h2,
+  .founder-content h2 span,
+  .founder-content p,
+  .founder-section h2,
+  .founder-section h2 span,
+  .founder-section p,
+  .founder-intro h2,
+  .founder-intro h2 span,
+  .founder-intro p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  /* Founder cards */
+  .founder-highlights {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 18px !important;
+  }
+
+  .founder-card {
+    width: 100% !important;
+    max-width: 360px !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .founder-card h3,
+  .founder-card p {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .founder-content,
+  .founder-section,
+  .founder-intro {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .founder-content h2,
+  .founder-section h2,
+  .founder-intro h2 {
+    font-size: 29px !important;
+    line-height: 1.15 !important;
+  }
+
+  .founder-content p,
+  .founder-section p,
+  .founder-intro p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .founder-highlights {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .founder-card {
+    max-width: 340px !important;
+  }
+}
