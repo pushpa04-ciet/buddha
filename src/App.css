@@ -24310,4 +24310,353 @@ body.page-about .about-intro {
   }
 
 }
+/* =========================================
+   ABOUT PAGE - MOBILE CLEAN FIX
+   ========================================= */
 
+@media (max-width: 768px) {
+
+  /* ================= HERO ================= */
+
+  .about-hero {
+    position: relative !important;
+    width: 100% !important;
+    height: 390px !important;
+    min-height: 390px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-hero-content {
+    position: absolute !important;
+
+    top: 50% !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    transform: translateY(-50%) !important;
+
+    margin: 0 !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+    z-index: 5 !important;
+  }
+
+  .about-hero-content > p:first-child {
+    margin: 0 0 14px !important;
+
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+    letter-spacing: 1.5px !important;
+
+    white-space: normal !important;
+  }
+
+  .about-hero-content h1 {
+    margin: 0 0 18px !important;
+
+    font-size: 42px !important;
+    line-height: 1.08 !important;
+
+    white-space: normal !important;
+    text-align: center !important;
+
+    color: #fff !important;
+  }
+
+  .about-hero-content h1 br {
+    display: block !important;
+  }
+
+  .about-hero-content h1 span {
+    margin-left: 0 !important;
+    color: #fff !important;
+  }
+
+  .about-hero-content > p:last-child {
+    width: 100% !important;
+    max-width: 320px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+
+    white-space: normal !important;
+    text-align: center !important;
+
+    color: #fff !important;
+  }
+
+
+  /* ================= ABOUT INTRO ================= */
+
+  .about-intro {
+    position: relative !important;
+
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    padding: 55px 22px 45px !important;
+    margin: 0 !important;
+
+    gap: 30px !important;
+
+    box-sizing: border-box !important;
+
+    overflow: visible !important;
+  }
+
+  .about-intro-content {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+
+    text-align: center !important;
+  }
+
+  .about-intro-content .section-tag {
+    display: block !important;
+
+    margin: 0 0 18px !important;
+
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+    letter-spacing: 1.5px !important;
+
+    text-align: center !important;
+  }
+
+  .about-intro-content h2 {
+    margin: 0 0 25px !important;
+
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+
+    white-space: normal !important;
+    text-align: center !important;
+
+    color: inherit !important;
+  }
+
+  .about-intro-content h2 br {
+    display: block !important;
+  }
+
+  .about-intro-content h2 span {
+    display: inline !important;
+    margin-left: 0 !important;
+
+    color: inherit !important;
+  }
+
+  .about-intro-content > p:not(.section-tag) {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 345px !important;
+
+    margin: 0 auto 22px !important;
+    padding: 0 !important;
+
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+
+    white-space: normal !important;
+    text-align: center !important;
+
+    transform: none !important;
+  }
+
+
+  /* ================= STAT BOX ================= */
+
+  .about-stat-box {
+    position: relative !important;
+
+    width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+
+    gap: 8px !important;
+
+    margin: 5px 0 0 !important;
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .about-stat-box > div {
+    min-width: 0 !important;
+
+    padding: 15px 5px !important;
+
+    text-align: center !important;
+  }
+
+  .about-stat-box strong {
+    display: block !important;
+
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+  }
+
+  .about-stat-box span {
+    display: block !important;
+
+    margin-top: 5px !important;
+
+    font-size: 9px !important;
+    line-height: 1.3 !important;
+
+    white-space: normal !important;
+  }
+
+
+  /* ================= VERTICALS ================= */
+
+  .about-verticals {
+    position: relative !important;
+
+    padding: 55px 20px !important;
+
+    overflow: hidden !important;
+  }
+
+  .about-verticals .section-heading {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .about-verticals .section-heading h2 {
+    white-space: normal !important;
+    text-align: center !important;
+
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-verticals .section-heading h2 br {
+    display: block !important;
+  }
+
+  .about-verticals .section-heading h2 span {
+    margin-left: 0 !important;
+  }
+
+  .about-vertical-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+
+    margin-top: 30px !important;
+  }
+
+  .about-vertical-card {
+    width: 100% !important;
+    min-height: 300px !important;
+
+    box-sizing: border-box !important;
+  }
+
+
+  /* ================= EXPERTISE ================= */
+
+  .about-expertise {
+    position: relative !important;
+
+    padding: 55px 20px !important;
+    overflow: hidden !important;
+  }
+
+  .about-expertise-content {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .about-expertise-content h2 {
+    white-space: normal !important;
+
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-expertise-content h2 br {
+    display: block !important;
+  }
+
+  .expertise-list {
+    margin-top: 30px !important;
+  }
+
+
+  /* ================= APPROACH ================= */
+
+  .about-approach {
+    position: relative !important;
+
+    padding: 55px 20px !important;
+    overflow: hidden !important;
+  }
+
+  .about-approach .section-heading {
+    text-align: center !important;
+  }
+
+  .about-approach .section-heading h2 {
+    white-space: normal !important;
+
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-approach .section-heading h2 br {
+    display: block !important;
+  }
+
+  .about-approach .section-heading h2 span {
+    margin-left: 0 !important;
+  }
+
+  .approach-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+
+    margin-top: 30px !important;
+  }
+
+
+  /* ================= CTA ================= */
+
+  .about-cta {
+    padding: 55px 20px !important;
+    text-align: center !important;
+  }
+
+  .about-cta h2 {
+    white-space: normal !important;
+
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-cta h2 br {
+    display: block !important;
+  }
+
+}
