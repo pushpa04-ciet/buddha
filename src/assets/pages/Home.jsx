@@ -14,7 +14,9 @@ function Home() {
   };
   useEffect(() => {
   const timer = setInterval(() => {
+    if (window.innerWidth > 768) {
     nextSlide();
+    }
   }, 6000);
 
   return () => clearInterval(timer);

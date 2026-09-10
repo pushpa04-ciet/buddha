@@ -28468,3 +28468,120 @@ body.page-about .about-intro {
   }
 
 }
+/* =========================================================
+   MOBILE HERO SLIDER - MANUAL ONLY
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Mobile lo hero same size */
+  .hero-container {
+    min-height: 650px !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .hero-slider {
+    width: 100% !important;
+    height: 650px !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  .hero-slider-track {
+    width: 300% !important;
+    display: flex !important;
+    transition: transform 0.8s ease-in-out !important;
+  }
+
+  .hero-slide {
+    flex: 0 0 33.333333% !important;
+    width: 33.333333% !important;
+    min-height: 650px !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* ================= ARROWS ================= */
+
+  .hero-arrow {
+    z-index: 1000 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .hero-arrow-left {
+    left: 12px !important;
+  }
+
+  .hero-arrow-right {
+    right: 12px !important;
+  }
+
+
+  /* ================= HERO CARD ================= */
+
+  .hero-slide .hero-card {
+    display: block !important;
+
+    position: absolute !important;
+
+    left: 15px !important;
+    right: auto !important;
+
+    top: auto !important;
+    bottom: 25px !important;
+
+    transform: none !important;
+
+    z-index: 30 !important;
+
+    width: 250px !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* ================= DOTS ================= */
+
+  .hero-dots {
+    z-index: 1000 !important;
+    bottom: 12px !important;
+  }
+
+  .hero-dots span {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .hero-container {
+    min-height: 650px !important;
+  }
+
+  .hero-slider {
+    height: 650px !important;
+  }
+
+  .hero-arrow-left {
+    left: 8px !important;
+  }
+
+  .hero-arrow-right {
+    right: 8px !important;
+  }
+
+  .hero-slide .hero-card {
+    left: 10px !important;
+    bottom: 25px !important;
+    width: 250px !important;
+  }
+
+}
