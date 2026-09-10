@@ -27902,3 +27902,78 @@ body.page-about .about-intro {
   }
 
 }
+/* =====================================
+   MOBILE - REDUCE CARD TO CARD GAP
+===================================== */
+
+@media (max-width: 768px) {
+
+  /* Common card containers */
+  .cards,
+  .card-grid,
+  .service-grid,
+  .services-grid,
+  .vertical-service-grid,
+  .security-service-track,
+  .security-industry-grid,
+  .security-approach-grid,
+  .electronic-security-grid,
+  .process-grid,
+  .founder-highlights,
+  .vm-grid,
+  .why-grid {
+    row-gap: 18px !important;
+  }
+
+  /* Common individual cards */
+  .card,
+  .service-card,
+  .vertical-service-card,
+  .service-vertical-card,
+  .security-service-card,
+  .security-industry-card,
+  .security-approach-card,
+  .electronic-card,
+  .process-card,
+  .founder-card,
+  .vm-card,
+  .why-card {
+    margin-bottom: 0 !important;
+  }
+
+  /* Sections lo cards madhya extra space remove */
+  .cards > *,
+  .card-grid > *,
+  .service-grid > *,
+  .services-grid > *,
+  .vertical-service-grid > *,
+  .security-industry-grid > *,
+  .security-approach-grid > *,
+  .electronic-security-grid > *,
+  .process-grid > *,
+  .founder-highlights > *,
+  .vm-grid > *,
+  .why-grid > * {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+
+  .cards,
+  .card-grid,
+  .service-grid,
+  .services-grid,
+  .vertical-service-grid,
+  .security-industry-grid,
+  .security-approach-grid,
+  .electronic-security-grid,
+  .process-grid,
+  .founder-highlights,
+  .vm-grid,
+  .why-grid {
+    row-gap: 14px !important;
+  }
+
+}
