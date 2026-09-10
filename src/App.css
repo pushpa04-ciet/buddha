@@ -27725,3 +27725,180 @@ body.page-about .about-intro {
   }
 
 }
+/* =====================================
+   SECURITY HERO - MOBILE CENTER FIX
+===================================== */
+
+@media (max-width: 768px) {
+
+  .security-hero {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .security-hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    text-align: center !important;
+  }
+
+  .security-hero-content p,
+  .security-hero-content h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+}
+/* =====================================
+   FOUNDER MESSAGE HEADING - MOBILE FIX
+===================================== */
+
+@media (max-width: 768px) {
+
+  .founder-message {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .founder-message-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .founder-message-content h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+
+  .founder-message-content h2 span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .founder-message-content {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .founder-message-content h2 {
+    font-size: 27px !important;
+    line-height: 1.2 !important;
+  }
+
+}
+/* =====================================
+   HOME HERO CARD - MOBILE FIX
+===================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding-top: 0 !important;
+  }
+
+  .hero-container {
+    padding-top: 10px !important;
+  }
+
+  .hero-card {
+    position: relative !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    text-align: center !important;
+
+    padding: 22px 18px !important;
+    box-sizing: border-box !important;
+
+    gap: 8px !important;
+  }
+
+  .hero-card-icon {
+    margin: 0 0 4px 0 !important;
+    line-height: 1 !important;
+  }
+
+  .hero-card strong {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+
+    text-align: center !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+  }
+
+  .hero-card span {
+    display: block !important;
+    width: 100% !important;
+    margin: 4px 0 0 0 !important;
+
+    text-align: center !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .hero-container {
+    padding-top: 5px !important;
+  }
+
+  .hero-card {
+    padding: 18px 14px !important;
+    gap: 6px !important;
+  }
+
+  .hero-card strong {
+    font-size: 17px !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-card span {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+  }
+
+}
